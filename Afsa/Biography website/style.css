@@ -1,0 +1,252 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+header,
+nav,
+ul,
+body,
+img,
+p,
+div,
+h1,
+h3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  position: relative;
+}
+
+h1 {
+  text-align: left;
+  font-size: 40px;
+  font-family: "Varela Round", sans-serif;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+/*///////////////////////// nav styles /////////////////// */
+
+nav {
+  width: 250px;
+  /*Specifies the width of the menu area*/
+  height: 100%;
+  /*Specifies the height of the menu area*/
+
+  /* margin-left: 200px; */
+  /* it always stays in the same place even if the page is scrolled*/
+  position: fixed;
+  overflow: hidden;
+  /*content is too big to fit into an area.*/
+  background: #c4c0c0;
+  box-shadow: 9px 9px 35px -8px rgba(0, 0, 0, 0.69);
+  text-align: center;
+}
+
+nav img {
+  border-radius: 50%;
+  /*set the outer border edge*/
+  margin-top: 30px;
+  width: 170px;
+  height: 170px;
+}
+
+.headname {
+  font-size: 30px;
+  font-family: "Ma Shan Zheng", cursive;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+nav ul {
+  font-family: "Titillium Web", sans-serif;
+  line-height: 50px;
+  font-size: 20px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+li {
+  color: #000;
+}
+
+/*inserts underline after the each selected list itmes*/
+nav a:after {
+  border-radius: 1em;
+  border-top: 0.1em solid #000;
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: 0.14em;
+  left: 0;
+}
+
+/*add hover effect */
+nav a:hover:after {
+  right: 0;
+}
+
+/*///////////////////////// main and Home styles /////////////////// */
+.main {
+  margin-left: 300px;
+}
+
+.home {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: 50px;
+}
+
+.home img {
+  margin-top: 100px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 9px 9px 35px -8px rgba(0, 0, 0, 0.69);
+}
+
+.home h1 {
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.home h3 {
+  font-family: "Varela Round", sans-serif;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.home p {
+  font-family: "Titillium Web", sans-serif;
+  text-align: justify;
+
+  line-height: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/*///////////////////////// about styles /////////////////// */
+.about {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.about p {
+  font-family: "Titillium Web", sans-serif;
+  text-align: justify;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/*///////////////////////// achievement styles /////////////////// */
+.achievement {
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.achievement-details-div {
+  width: 90%;
+  height: 120px;
+  margin-bottom: 20px;
+}
+.achievement-details-div img {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+.achievement-details-div h3 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 26px;
+}
+.achievement-details-div p {
+  font-size: 16px;
+  margin-right: 10px;
+  font-family: "Varela Round", sans-serif;
+}
+
+/*///////////////////////// photo styles /////////////////// */
+.photo {
+  margin-left: 50px;
+}
+
+.photo img {
+  width: 300px;
+  height: 300px;
+  margin-left: 50px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+/*///////////////////////// contact styles /////////////////// */
+.contact {
+  margin-left: 50px;
+}
+
+.contact-socialicon {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+/* /////////////////////footer///////////////////////////////// */
+
+footer p {
+  font-family: "Titillium Web", sans-serif;
+
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-top: 200px;
+  text-align: right;
+}
+
+/* /////////////////////////////mediascreen//////////////////////////////// */
+@media screen and (max-width: 1440px) {
+  nav {
+    margin-left: 0;
+  }
+
+  .achievement-details-div {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    display: none;
+    /*Hide an element when the browser's width is 600px wide or less*/
+  }
+
+  .main {
+    margin: 0;
+  }
+
+  .achievement-details-div {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 100px;
+  }
+}

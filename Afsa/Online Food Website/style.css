@@ -1,0 +1,161 @@
+/*-----------------------------------*\ 
+  #RESET
+\*-----------------------------------*/
+html {
+  /*specifies the font*/
+  font-family: "Rubik", sans-serif;
+  /*scrolling behavior for a scrolling box*/
+  scroll-behavior: smooth;
+}
+
+li {
+  /*emove the markers/bullets*/
+  list-style: none;
+}
+
+a {
+  /*inherit from value from its parent element*/
+  font: inherit;
+  /*remove underlines from links*/
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  border: none;
+  background: none;
+}
+
+img,
+svg,
+ion-icon,
+span,
+button {
+  /* starts on a new line */
+  display: block;
+
+}
+
+/*-----------------------------------*\ 
+  #MAIN CONTAINER
+\*-----------------------------------*/
+
+.container {
+  /*relative to the first parent element*/
+  position: relative;
+  max-width: 1440px;
+  /* center align HTML elements*/
+  margin: auto;
+  background: #ffffff;
+  /* if overflow -hidden from view*/
+  overflow: hidden;
+}
+
+/*-----------------------------------*\ 
+  #HEADER
+\*-----------------------------------*/
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /*moving the element along the X-axis*/
+  width: 100%;
+  padding: 20px 30px;
+  background: hsla(0, 0%, 100%, 0.99);
+  /*add background effects*/
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.05);
+  box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.05);
+  /*apply shadow*/
+  z-index: 5;
+  /*placed in front */
+}
+
+.navbar-wrapper {
+  /* laying elements in row*/
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-nav {
+  position: static;
+  /* make transparent */
+  opacity: 1;
+  width: auto;
+  height: auto;
+  padding: 0;
+  /* laying elements in row*/
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  gap: 30px;
+}
+
+.nav-link {
+  color: #000;
+  font-size: 22px;
+  /* effect with a slow start*/
+  transition: 0.25s ease;
+}
+
+.nav-link:hover {
+  /*Chnage color when mouse hovver*/
+  color: #f7c532;
+}
+
+/*-----------------------------------*\ 
+  #HOME
+\*-----------------------------------*/
+.home {
+  /*Grid layout - row and column*/
+  display: grid;
+  /* Divide into 2 column*/
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+  padding: 10px;
+}
+
+.home-left {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.1;
+  /*spacing between letters */
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.home-left p {
+  font-size: 20px;
+  display: inline-block;
+  padding: 3px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.home-right {
+  position: relative;
+  aspect-ratio: 10 / 11;
+  padding-top: 70%;
+}
+
+.food-img {
+  position: absolute;
+  width: 60%;
+}
+
+.food-1 {
+  top: 25%;
+  left: -4%;
+}
+
+.food-2 {
+  top: 12%;
+  right: -4%;
+}
+
+.food-3 {
+  top: 40%;
+  right: -5%;
+}

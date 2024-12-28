@@ -1,0 +1,456 @@
+/*-----------------------------------*\ 
+  #RESET
+\*-----------------------------------*/
+html {
+  /*specifies the font*/
+  font-family: "Rubik", sans-serif;
+  /*scrolling behavior for a scrolling box*/
+  scroll-behavior: smooth;
+}
+
+li {
+  /*emove the markers/bullets*/
+  list-style: none;
+}
+
+a {
+  /*inherit from value from its parent element*/
+  font: inherit;
+  /*remove underlines from links*/
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  border: none;
+  background: none;
+}
+
+img,
+svg,
+ion-icon,
+span,
+button {
+  /* starts on a new line */
+  display: block;
+
+}
+
+/*-----------------------------------*\ 
+  #MAIN CONTAINER
+\*-----------------------------------*/
+
+.container {
+  /*relative to the first parent element*/
+  position: relative;
+  max-width: 1440px;
+  /* center align HTML elements*/
+  margin: auto;
+  background: #ffffff;
+  /* if overflow -hidden from view*/
+  overflow: hidden;
+}
+
+/*-----------------------------------*\ 
+  #HEADER
+\*-----------------------------------*/
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /*moving the element along the X-axis*/
+  width: 100%;
+  padding: 20px 30px 10px 10px;
+  background: hsla(0, 0%, 100%, 0.99);
+  /*add background effects*/
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.05);
+  box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.05);
+  /*apply shadow*/
+  z-index: 5;
+  /*placed in front */
+}
+
+.navbar-wrapper {
+  /* laying elements in row*/
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-nav {
+  position: static;
+  /* make transparent */
+  opacity: 1;
+  width: auto;
+  height: auto;
+  padding: 0;
+  /* laying elements in row*/
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  gap: 30px;
+}
+
+.nav-link {
+  color: #000;
+  font-size: 22px;
+  /* effect with a slow start*/
+  transition: 0.25s ease;
+}
+
+.nav-link:hover {
+  /*Chnage color when mouse hovver*/
+  color: #f7c532;
+}
+
+/*-----------------------------------*\ 
+  #HOME
+\*-----------------------------------*/
+.home {
+  /*Grid layout - row and column*/
+  display: grid;
+  /* Divide into 2 column*/
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+  padding: 10px;
+}
+
+.home-left {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.1;
+  /*spacing between letters */
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.home-left p {
+  font-size: 20px;
+  display: inline-block;
+  padding: 3px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.home-right {
+  position: relative;
+  aspect-ratio: 10 / 11;
+  padding-top: 20%;
+}
+
+.food-img {
+  position: absolute;
+  width: 60%;
+}
+
+.food-1 {
+  top: 25%;
+  left: -4%;
+}
+
+.food-2 {
+  top: 12%;
+  right: -4%;
+}
+
+.food-3 {
+  top: 40%;
+  right: -5%;
+}
+
+/*-----------------------------------*\ 
+  #ABOUT
+\*-----------------------------------*/
+.about {
+  padding-top: 120px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  /* layout with rows and columns*/
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /*sets the gaps between rows and columns*/
+  gap: 60px;
+  align-items: center;
+}
+
+.about-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px dotted;
+  padding: 10px;
+}
+
+.about-right .section-title {
+  margin-bottom: 30px;
+}
+
+.about-right p {
+  max-width: 100%;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+/*-----------------------------------*\ 
+  #SERVICE SECTION
+\*-----------------------------------*/
+.services {
+  padding: 110px;
+  display: grid;
+  /*rows and columns*/
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.card-number {
+  font-size: 48px;
+  font-family: "Monoton", cursive;
+  color: #f7c532;
+  margin: 0;
+
+}
+
+.card-heading {
+  color: #000;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+  display: inline;
+}
+
+.card-text {
+  color: #000;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/*-----------------------------------*\ 
+  #MENU SECTION
+\*-----------------------------------*/
+.menu {
+  padding: 120px;
+}
+
+.menu .section-title {
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.menu-card .img-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /*resized to fit its container*/
+}
+
+.menu-card:hover .menu-img {
+  transform: scale(1.05);
+  /*scaling image*/
+}
+
+.menu-card .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background: #f3f2f2;
+  margin-bottom: 0px;
+}
+
+.menu-card .menu-name {
+  color: #000;
+  font-size: 28px;
+  font-weight: 600;
+  padding-left: 15px;
+  margin: 0px;
+}
+
+.menu-card .menu-price {
+  background: #f7c532;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0px;
+}
+
+.menu-card .small {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.menu-card .menu-text {
+  font-size: 14px;
+  color: #999999;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  margin-bottom: 15px;
+}
+
+.menu-card .menu-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #f7c532;
+}
+
+.menu-rating img {
+  height: 30px;
+  width: 30px;
+}
+
+.menu .btn-primary {
+
+  background: #f7c532;
+  width: 100px;
+  height: 50px;
+  border-radius: 2px;
+  transition: 0.25s ease;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding-top: 5px;
+  position: relative;
+}
+
+/*-----------------------------------*\ 
+  #TESTIMONIALS SECTION
+\*-----------------------------------*/
+
+.testimonials {
+  padding: 120px;
+
+}
+
+.testimonials .section-title {
+  margin-bottom: 15px;
+  font-size: 32px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.testimonials-card .card-title {
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.testimonials-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.testimonials-rating img {
+  width: 20px;
+  height: 20px;
+}
+
+.testimonials-text {
+  font-size: 14px;
+  color: #999999;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+.customer-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.customer-img-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.customer-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.customer-name {
+  font-size: 14px;
+  color: #000;
+  font-weight: 600;
+}
+
+/*-----------------------------------*\ 
+  #FOOTER
+\*-----------------------------------*/
+
+footer {
+  position: relative;
+  background: #f3f2f2;
+  padding: 0px;
+  border: 0px;
+  height: 100px;
+  /*add background effects*/
+  border-top: 1px solid hsla(0, 0%, 0%, 0.05);
+  box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.05);
+  /*apply shadow*/
+  z-index: 5;
+  /*placed in front */
+}
+
+.footer-wrapper {
+  /* Add padding of 20px to all sides of the element */
+  padding: 20px;
+
+  /* Display the element as a flexbox container */
+  display: flex;
+
+  /* Arrange child elements side-by-side horizontally */
+  flex-direction: row;
+
+  /* Distribute child elements horizontally with space between them */
+  justify-content: space-between;
+
+  /* Align child elements vertically in the center */
+  align-items: center;
+}
+
+
+.social-link {
+  display: flex;
+  gap: 15px;
+
+}
+
+.copyright {
+  font-size: 12px;
+  color: #676767;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
