@@ -1,0 +1,52 @@
+Fiction
+Title:Little Women
+Genre:autobiographical
+Author:Louisa May Alcott
+Year:1868
+Synopsis: Four sisters and their mother, whom they call Marmee, live in a new neighborhood in Massachusetts in genteel poverty. Having lost all his money, their father is serving as a chaplain for the Union Army in the American Civil War, far from home. The mother and daughters face their first Christmas without him.
+
+Title:To Kill a Mockingbird
+Genre: Southern Gothica
+Author:Harper Lee
+Year:1960
+Synopsis: Scout Finch, a six-year-old tomboy who lives with her lawyer father Atticus and her ten-year-old brother Jem. Scout, Jem and their friend Dill try to make their reclusive neighbour Boo Radley leave his house. Boo has not been seen in Maycomb since he was a teenager.
+
+Title:Leave the world behind
+Genre: Mystery
+Author:Rumaan Alam
+Year: 2020
+Synopsis: Amanda and Clay head out to a remote corner of Long Island expecting a vacation: a quiet reprieve from life in New York City, quality time with their teenage son and daughter, and a taste of the good life in the luxurious home they've rented for the week
+
+Title:Time is a mother
+Genre: Contemporary 
+Author:Ocean Vuong
+Year: 2022
+Synopsis: Ocean Vuong searches for life among the aftershocks of his mother's death, embodying the paradox of sitting within grief while being determined to survive beyond it. 
+
+Title:White Teeth
+Genre: Contemporary 
+Author:Zadie Smith
+Year: 2000
+Synopsis: At the center of this invigorating novel are two unlikely friends, Archie Jones and Samad Iqbal. Hapless veterans of World War II, Archie and Samad and their families become agents of England’s irrevocable transformation.
+
+Non-fiction
+Title: Thinking, Fast and Slow
+Genre: Psychology
+Author:Daniel Kahneman
+Year:2011
+Synopsis: From framing choices to people's tendency to replace a difficult question with one which is easy to answer, the book summarizes several decades of research to suggest that people have too much confidence in human judgment.
+
+Title: Alan Turing: The Enigma
+Genre: Biography
+Author: Andrew Hodges
+Year:1983
+Synopsis: A biography of the British mathematician, codebreaker, and early computer scientist, Alan Turing (1912–1954) by Andrew Hodges. The book covers Alan Turing's life and work. The 2014 film The Imitation Game is loosely based on the book, with dramatizati
+
+Title: The Gifts of Imperfection
+Genre: Self Help
+Author: Brene Brown
+Year:2010
+Synopsis: Each day we face a barrage of images and messages from society and the media telling us who, what, and how we should be. We are led to believe that if we could only look perfect and lead perfect lives, we'd no longer feel inadequate.
+
+
+

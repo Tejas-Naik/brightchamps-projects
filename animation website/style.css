@@ -1,0 +1,264 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(#d2f3fe 5%, #fafbc1);
+  animation: dayNightCycle 30s ease infinite;
+}
+
+@keyframes dayNightCycle {
+  0% {
+    background: linear-gradient(#f4f9fb 80%, #e3f1f2 20%);
+  }
+  45% {
+    background: linear-gradient(#f9f8f1 30%, #eafbac);
+  }
+  60% {
+    background: linear-gradient(white, #f3bb53);
+  }
+  80% {
+    background: linear-gradient(#d4d6f7 40%, #6f6fb8);
+  }
+  90% {
+    background: linear-gradient(#656ef1 40%, #303091);
+  }
+  100% {
+    background: linear-gradient(#2b38ee 40%, #141443);
+  }
+}
+
+img {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
+#sun {
+  width: 120px;
+  height: 120px;
+  background-color: yellow;
+  border-radius: 100%;
+  box-shadow: 0 0 50px 10px yellow;
+  animation: sunrise 30s infinite;
+}
+
+@keyframes sunrise {
+  from {
+    transform: translateX(0px) translateY(150px);
+  }
+  45% {
+    transform: translateX(600px) translateY(0px);
+    box-shadow: 0 0 30px 20px #d48516;
+    background-color: #f8d80d;
+  }
+  60% {
+    transform: translateX(1000px) translateY(0px);
+    box-shadow: 0 0 50px 10px #cb5f06;
+    background-color: #de2302;
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  to {
+    transform: translateX(1300px) translateY(150px);
+    opacity: 0;
+  }
+}
+
+.light {
+  width: 20px;
+  height: 25px;
+  background-color: yellow;
+  position: absolute;
+  animation: lightup 30s infinite;
+  box-shadow: 0 0 20px 10px yellow;
+}
+
+@keyframes lightup {
+  from {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#light1 {
+  left: 8%;
+  top: 90%;
+}
+#light2 {
+  left: 62%;
+  top: 75%;
+}
+#light3 {
+  left: 40%;
+  top: 70%;
+}
+#light4 {
+  left: 18%;
+  top: 95%;
+}
+#light5 {
+  left: 70%;
+  top: 60%;
+}
+#light6 {
+  right: 15%;
+  top: 90%;
+}
+
+#moon {
+  position: absolute;
+  top: 30px;
+  left: 20%;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  background-color: white;
+  box-shadow: 0 0 5px 5px white;
+  opacity: 0;
+  animation: fadeIn 30s infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.1;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#crow {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  top: 20px;
+  left: -300px;
+  animation: movecrow 10s linear;
+}
+
+@keyframes movecrow {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(1800px);
+  }
+}
+
+.cloud {
+  width: 250px;
+  height: 120px;
+  position: absolute;
+  display: block;
+  animation: movecloud 30s infinite;
+}
+
+#cloud1 {
+  top: 20px;
+  left: 25%;
+}
+
+#cloud2 {
+  top: 60px;
+  right: 25%;
+}
+
+@keyframes movecloud {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.star {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: white;
+  box-shadow: 0 0 2px 2px white;
+  animation: starglow 30s infinite;
+}
+@keyframes starglow {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#star1 {
+  left: 5%;
+  top: 60%;
+}
+#star2 {
+  top: 20%;
+  left: 8%;
+}
+#star3 {
+  left: 55%;
+  top: 15%;
+}
+#star4 {
+  top: 40%;
+  left: 30%;
+}
+#star5 {
+  left: 43%;
+  top: 2%;
+}
+#star6 {
+  top: 40%;
+  left: 48%;
+}
+#star7 {
+  top: 20%;
+  left: 63%;
+}
+#star8 {
+  left: 79%;
+}
+#star9 {
+  top: 70%;
+  left: 80%;
+}
+#star10 {
+  top: 45%;
+  left: 90%;
+}
+#star11 {
+  top: 5%;
+  left: 98%;
+}

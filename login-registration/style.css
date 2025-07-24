@@ -1,0 +1,98 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Mukta", sans-serif;
+  background-image: url("https://img.freepik.com/free-photo/office-desktop-with-laptop-analytics_23-2148174053.jpg?size=626&ext=jpg&ga=GA1.2.2063357093.1690429566&semt=ais");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.92);
+  width: 500px;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  text-align: left;
+}
+
+form .heading {
+  text-align: center;
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 25px;
+  border-bottom: 3px solid #ffa500;
+  padding-bottom: 10px;
+}
+
+div {
+  margin-bottom: 22px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+h4 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #004080;
+}
+
+h4 span {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #ff6600;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+#login {
+  display: block;
+}
+
+#registration {
+  display: none;
+}

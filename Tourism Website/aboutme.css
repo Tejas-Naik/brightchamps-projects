@@ -1,0 +1,155 @@
+body{background-color:#186bd8;
+    font-family: 'Edu SA Beginner';}
+
+h1{color:white;
+  font-size:35px;
+  padding:50px;}
+
+@media (min-width:769px) {
+   h1{font-size:45px;}
+}
+
+header{display:flex;}
+
+img{width:200px;
+    height:200px;
+    border-radius:100%;
+     animation: appear 3s ease;
+}
+
+@keyframes appear {
+  0%{
+    opacity: 0;
+  }
+
+  100%{opacity:1;}
+}
+
+#signature{
+          opacity:0;
+         }
+#signature img{width:300px;
+              height:300px;
+              text-align:center;
+               margin-right:40%;}
+
+@media (min-width:769px) {
+   #signature{bottom:5%;
+             left:40%;
+              width:300px;
+             }
+}
+
+@keyframes sigappear{
+  from{opacity:0}
+  to{opacity:1;}
+}
+
+p{color:white;
+ font-size:30px;
+ padding:2%;}
+
+
+.typing-container {
+  font-size: 18px;
+  color: #fbf4f4;
+  position: relative;
+  opacity: 1;
+  padding:20px;
+  width:70%;
+  animation: fade-in 1s ease-in-out forwards;
+  text-align:justify;
+}
+
+@media (min-width:769px) {
+   .typing-container{font-size:24px;
+                    padding:40px;}
+}
+
+
+#cursor {
+  display: inline-block;
+  width: 8px;
+  height: 24px;
+  background-color: #333;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.circle1{width:150px;
+       height:150px;
+       border-radius:100%;
+       background-color:white;
+       position:absolute;
+       top:8%;
+       right:0%;
+       opacity:0.3;}
+
+.circle2{width:50px;
+       height:50px;
+       border-radius:100%;
+       background-color:white;
+       position:absolute;
+       top:20%;
+       right:5%;
+      opacity:0.3;}
+
+.circle3{width:90px;
+       height:90px;
+       border-radius:100%;
+       background-color:white;
+       position:absolute;
+       top:45%;
+       right:3%;
+      opacity:0.3;}
+
+.circle4{width:50px;
+       height:50px;
+       border-radius:100%;
+       background-color:white;
+       position:absolute;
+       top:60%;
+       right:5%;
+      opacity:0.3;}
+
+.circle5{width:80px;
+       height:80px;
+       border-radius:100%;
+       background-color:white;
+       position:absolute;
+       top:80%;
+       right:2%;
+      opacity:0.3;}
+
+
+@media (min-width:769px) {
+    .circle1{width:250px;
+            height:250px;}
+    .circle2{width:150px;
+            height:150px;}
+  .circle3{width:100px;
+          height:100px;}
+  .circle4{width:150px;
+          height:150px;}
+  .circle5{width:80px;
+          height:80px;}
+}
+
+.goback{color:#fafafa;
+       font-size:50px;
+       text-align:center;
+       cursor:grab;}

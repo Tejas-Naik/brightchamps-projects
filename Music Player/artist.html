@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Single play</title>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1, minimum-scale=1"
+    />
+    <link rel="stylesheet" type="text/css" href="artist.css" />
+  </head>
+  <body>
+    <header class="body-header" id="header-1">
+      <div id="logo">
+        <div id="logo-image"><img src="artist images/logo-main.jpeg" /></div>
+        <div id="logo-name">Your Music Destination</div>
+      </div>
+    </header>
+
+    <!--
+<header class="body-header mix-blue" id="header-2">
+	<div id="profile">
+		<div id="search-span">
+			<input type="text" name="search" placeholder="search">
+		</div>
+		<div id="bell-icon">
+			<i class="far fa-bell"></i>
+		</div>
+		<div id="profile-image">
+			<img src="index-2 pics/profile-pic.jpeg">
+		</div>
+	</div>
+</header>
+
+-->
+
+    <div id="main-div">
+      <main>
+        <div id="artist-div">
+          <div id="artist-image"><img src="artist images/artist.jpeg" /></div>
+          <div id="artist-info">
+            <h1>Charlie Puth</h1>
+            <h4>American singer</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+              ratione aliquid, vitae labore repellendus veritatis beatae
+              similique optio in soluta iusto maiores adipisci. Dolorem
+              reiciendis neque possimus commodi, repudiandae, illum molestias
+              corporis, aspernatur soluta recusandae velit voluptates quasi at
+              earum quod modi.
+            </p>
+            <form id="play-button">
+              <button type="button">Play All</button>
+            </form>
+            <h3>Follow</h3>
+          </div>
+        </div>
+        <div id="play-templates">
+          <div class="template">
+            <div class="template-image">
+              <img src="artist images/artist.jpeg" />
+            </div>
+            <h3>Song</h3>
+            <h4>Artist</h4>
+            <h2 class="icon-holder">
+              <span><i class="far fa-heart"></i></span>
+              <span><i class="fas fa-plus"></i></span>
+            </h2>
+          </div>
+          <div class="template">
+            <div class="template-image">
+              <img src="artist images/template2.jpeg" />
+            </div>
+            <h3>Song</h3>
+            <h4>Artist</h4>
+            <h2 class="icon-holder">
+              <span><i class="far fa-heart"></i></span>
+              <span><i class="fas fa-plus"></i></span>
+            </h2>
+          </div>
+          <div class="template">
+            <div class="template-image">
+              <img src="artist images/template3.jpeg" />
+            </div>
+            <h3>Song</h3>
+            <h4>Artist</h4>
+            <h2 class="icon-holder">
+              <span><i class="far fa-heart"></i></span>
+              <span><i class="fas fa-plus"></i></span>
+            </h2>
+          </div>
+          <div class="template">
+            <div class="template-image">
+              <img src="artist images/template4.jpeg" />
+            </div>
+            <h3>Song</h3>
+            <h4>Artist</h4>
+            <h2 class="icon-holder">
+              <span><i class="far fa-heart"></i></span>
+              <span><i class="fas fa-plus"></i></span>
+            </h2>
+          </div>
+          <div class="template">
+            <div class="template-image">
+              <img src="artist images/template5.png" />
+            </div>
+            <h3>Song</h3>
+            <h4>Artist</h4>
+            <h2 class="icon-holder">
+              <span><i class="far fa-heart"></i></span>
+              <span><i class="fas fa-plus"></i></span>
+            </h2>
+          </div>
+        </div>
+      </main>
+      <aside>
+        <h2>Similar Artist</h2>
+        <div class="queue-flex">
+          <div class="aside-playlist">
+            <div class="dropdown-menu">
+              <div class="bars">
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+              <div class="dropdown-list">
+                <ul>
+                  <li>Play Now</li>
+                  <li>Add to Playlist</li>
+                  <li>Add to favourite</li>
+                  <li>Get Info</li>
+                </ul>
+              </div>
+            </div>
+            <img src="artist images/template2.jpeg" />
+            <div class="heading-container">
+              <h3>Song-Name</h3>
+              <h4>Artist</h4>
+            </div>
+          </div>
+          <div class="aside-playlist">
+            <div class="dropdown-menu">
+              <div class="bars">
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+              <div class="dropdown-list">
+                <ul>
+                  <li>Play Now</li>
+                  <li>Add to Playlist</li>
+                  <li>Add to favourite</li>
+                  <li>Get Info</li>
+                </ul>
+              </div>
+            </div>
+            <img src="artist images/template3.jpeg" />
+            <div class="heading-container">
+              <h3>Song-Name</h3>
+              <h4>Artist</h4>
+            </div>
+          </div>
+          <div class="aside-playlist">
+            <div class="dropdown-menu">
+              <div class="bars">
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+              <div class="dropdown-list">
+                <ul>
+                  <li>Play Now</li>
+                  <li>Add to Playlist</li>
+                  <li>Add to favourite</li>
+                  <li>Get Info</li>
+                </ul>
+              </div>
+            </div>
+            <img src="artist images/template4.jpeg" />
+            <div class="heading-container">
+              <h3>Song-Name</h3>
+              <h4>Artist</h4>
+            </div>
+          </div>
+        </div>
+
+        <h2>Recently Played</h2>
+        <div class="queue-flex">
+          <div class="aside-playlist">
+            <img src="artist images/template5.png" />
+            <div class="heading-container">
+              <h3>Song-Name</h3>
+              <h4>Artist</h4>
+            </div>
+            <div class="heart"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="aside-playlist">
+            <img src="artist images/template2.jpeg" />
+            <div class="heading-container">
+              <h3>Song-Name</h3>
+              <h4>Artist</h4>
+            </div>
+            <div class="heart"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="aside-playlist">
+            <img src="artist images/template3.jpeg" />
+            <div class="heading-container">
+              <h3>Song-Name</h3>
+              <h4>Artist</h4>
+            </div>
+            <div class="heart"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="aside-playlist">
+            <img src="artist images/template4.jpeg" />
+            <div class="heading-container">
+              <h3>Song-Name</h3>
+              <h4>Artist</h4>
+            </div>
+            <div class="heart"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="aside-playlist">
+            <img src="artist images/artist.jpeg" />
+            <div class="heading-container">
+              <h3>Song-Name</h3>
+              <h4>Artist</h4>
+            </div>
+            <div class="heart"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="aside-playlist">
+            <img src="artist images/template6.jpeg" />
+            <div class="heading-container">
+              <h3>Song-Name</h3>
+              <h4>Artist</h4>
+            </div>
+            <div class="heart"><i class="far fa-heart"></i></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

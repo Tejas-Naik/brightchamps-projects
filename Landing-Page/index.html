@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>landing page</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&family=Edu+SA+Beginner&family=Henny+Penny&family=Josefin+Sans:wght@300&family=Poppins:ital,wght@1,100&family=Shantell+Sans:wght@300&family=Ysabeau+Infant:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <a href="#courses">What you learn</a>
+    <a href="#how">How you learn</a>
+    <a><button onclick="details()">Book a free class</button></a>
+  </header>
+  <div id="banner">
+   <h1>Bright Champs</h1>
+      <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGFpaGZhN2hycWtyNDk0ZjY4NnlqcjVyMXNkYzl5anA5anB4dXBiMiZlcD12MV9naWZzX3NlYXJjaCZjdD1z/S9ukg9TDGpMDxHKqGI/giphy.gif">
+    <h2>Where dreams take flight</h2>
+    <button onclick="details()">Enroll Now</button>
+  </div>  
+  <form id="form">
+    <div id="done" >
+    <img src="https://cliply.co/wp-content/uploads/2021/03/372103860_CHECK_MARK_400px.gif">
+    <h3>Thankyou!</h3>
+    </div> 
+    <div id="formdetails">
+    <h3>Just few details</h3>
+    <label>Name</label>
+    <input type="text">
+    <label>Email</label>
+    <input type="email">
+    <label>Phone number</label>
+    <input type="number">
+    <button onclick="send()">Send</button>
+    </div>
+  </form>
+  <section id="short">
+   <main>We make your dreams come True</main>
+   <p>Embark on a transformative journey with us,where your aspirations,</br> are nurtured and crafted into tangible realities,</br> empowering you to live the dream </br>you've always envisioned</p>
+  </section>
+
+  <div id="free">
+     <span id="close">X</span>
+    <h2>Your first class is on Us!</h2>
+    <h4>Book your free class now</h4>
+    <button onclick="details()">Yay! Count me in</button>
+   </div>
+
+  <section id="courses">
+    <h2>Our courses Sync with your dream</h2>
+    <div id="topics">
+      <h3 onclick="designing()">Designing</h3>
+      <h3 onclick="business()">Business</h3>
+      <h3 onclick="programming()">Programming</h3>
+    </div>
+    <div id="content">
+      <div id="designing" class="contenttext">
+           User Interface (UI) and User Experience (UX) design play an instrumental role in creating an effective virtual learning environment. A thoughtfully crafted UI/UX design ensures that students, educators, and parents can easily navigate through the platform, find relevant information, and engage with the educational content. 
+      </div> 
+       <div id="business" class="contenttext">
+           Discover a world of opportunities through our comprehensive range of business courses that are tailored to equip you with the knowledge and skills necessary to excel in today's dynamic corporate landscape. Whether you're looking to launch your own startup, climb the corporate ladder, or explore exciting entrepreneurial ventures, our diverse selection of business courses offers something for every aspiring professional
+      </div> 
+      <div id="programming" class="contenttext">
+        Embark on a journey of innovation and creativity with our comprehensive range of programming courses designed to empower you with the coding skills needed to excel in the tech-driven world. Whether you're a novice looking to learn the basics or an experienced programmer aiming to master new languages and frameworks, our diverse selection of programming courses caters to learners of all levels.
+      </div>  
+    </div>  
+  </section>
+
+  <section id="confused">
+    <div>
+       <h2 id="dream">Don't know where to start?</h2>
+       <h4>We are just a form away</h4>
+       <button onclick="details()">Guide Me!</button>
+    </div>  
+    <div>
+      <img src="https://vunetsystems.com/wp-content/uploads/2022/06/Contact-Us-animation.gif";
+    </div>
+  </section>
+
+  <section id="how">
+     <h2>Why learn with us?</h2>
+     <h3>Because we teach with</h3>
+     <main id="howcards">
+       <div>
+          <h3>1.Personalised lessons</h3>
+         <h6>We curate lessons based on your interests and strengths.</h6>
+       </div>  
+       <div>
+         <h3>2.One on one mentoring</h3>
+         <h6>Mentor who would guide student individually.</h6>
+       </div>
+       <div>
+         <h3>3.Your availability</h3>
+         <h6>Classes can be arranged as per your schedule. </h6>
+       </div>  
+     </main>  
+  </section>
+
+
+  <section id="feedback">
+    <h2>Echoes of Satisfaction...</h2>
+    <h4>Revel in Our Received Feedbacks!</h4>
+    <div>
+      <h3>Mary Desouza </br>
+          <div class="rating">
+             <span class="star">&#9733;</span>
+             <span class="star">&#9733;</span>
+             <span class="star">&#9733;</span>
+             <span class="star">&#9733;</span>
+             <span class="star">&#9733;</span>
+          </div>
+
+      </h3>
+      <p>I'm extremely impressed with this education platform! The interactive lessons and engaging content have made learning so enjoyable. The clear explanations and real-life examples have helped me grasp complex concepts effortlessly.</p>
+   </div>
+  <hr>
+     <div>
+      <h3>Daniel Rao </br>
+          <div class="rating">
+             <span class="star">&#9733;</span>
+             <span class="star">&#9733;</span>
+             <span class="star">&#9733;</span>
+             <span class="star">&#9734;</span>
+             <span class="star">&#9734;</span>
+          </div>
+
+      </h3>
+      <p>The interactive features like virtual labs and simulations have taken my learning to a whole new level. It's not just reading from textbooks; I'm actually applying what I'm learning in a practical way. Also, providing more downloadable resources for offline study would be a great addition."</p>
+      
+    </div>
+    <hr>
+     <div>
+      <h3>Albert Joseph </br>
+          <div class="rating">
+             <span class="star">&#9733;</span>
+             <span class="star">&#9733;</span>
+             <span class="star">&#9733;</span>
+             <span class="star">&#9733;</span>
+             <span class="star">&#9734;</span>
+          </div>
+
+      </h3>
+      <p>I want to express my gratitude for the incredible support team behind this education platform. Whenever I've encountered an issue or had questions, the response has been swift and comprehensive. It's reassuring to know that assistance is just a click away</p>
+      
+    </div>
+  </section>
+
+  <section id="join">
+    <h2>Join in on Something Big</h2>
+    <div>
+      <h3>10M Learners </h3>
+      <h3>150+ Countries</h3>
+      <h3>2.5 Billion codes</h3>
+    </div>
+  </section>
+  
+  <section id="benefits">
+     <h2>Experience Excellence: Your Gateway to Premium Perks.</h2>
+     <main id="benefitcards">
+       <div>
+          <h3>Certificate of appreciaition</h3>
+          <img src="https://media2.giphy.com/media/mAJXcr1kTuVvExyj2q/source.gif">
+       </div>  
+       <div>
+         <h3>Trending skills</h3>
+         <img src="https://media0.giphy.com/media/qvO9wAI3901qyEPyhk/giphy.gif?cid=6c09b952ns005oi4e9h4l7colta79nqxcmc4fwwcz15mwmdw&rid=giphy.gif&ct=s">
+       </div>
+       <div>
+         <h3>Hands on experience</h3>
+         <img src="https://www.majormag.in/wp-content/uploads/2023/03/woman-working.gif">
+       </div>  
+     </main>  
+  </section>  
+
+  <footer>
+    <div>
+      <h3>Location</h3>
+      <p>304, Church street,</br>Krambugata, </br>Norway</p>
+    </div>
+    <div>
+      <h3>Courses</h3>
+      <p>Business</p>
+      <p>Designing</p>
+      <p>Programming</p>
+    </div>
+    <div>
+      <h3>About Us</h3>
+      <p>We are a great </br>team working hard to </br>empower yound minds</p>
+    </div>
+  </footer>
+  
+   <script src="script.js"></script>
+  </body>
+</html>
+
+
+  
+

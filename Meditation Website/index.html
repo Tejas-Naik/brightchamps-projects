@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Meditation Website </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="video">
+    <video autoplay muted loop id="bg-video">
+      <source src="./video/rain.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="app">
+    <div id="focus-heading" class="focus-heading">
+      <h1>FOCUS ON BREATHING</h1>
+    </div>
+    <div class="focus">
+      <div>
+      </div>
+    </div>
+
+    <div id="focus-text" class="focus-text">
+      <h2>Inhale through your nose as the circle expands,<br />
+        hold your breath, <br /> and then exhale through your mouth as it contracts.</br>
+      Repeat this as needed.</h2>
+    </div>
+
+
+    <div class="audio">
+      <audio id="player" autoplay loop>
+        <source src="./audio/rain.mp3" type="audio/mpeg">
+      </audio>
+
+      <img src="pause-button.png" alt="pause" onclick="pause()">
+
+      <img src="volume-down.png" alt="Down" onclick="down()">
+
+      <input type="range" min="1" max="100" value="100" id="VRange">
+
+      <img src="volume-up.png" alt="Up" onclick="up()">
+
+      <img src="play-button.png" alt="play" onclick="play()">
+      <script>
+        function down() {
+          // Decrease the volume of the 'player' element by 0.1 (10%)
+          document.getElementById('player').volume -= 0.1;
+          // Update the value of the 'VRange' range input to reflect the updated volume
+          document.getElementById('VRange').value = document.getElementById('player').volume * 100
+        }
+        function up() {
+          // Increase the volume of the 'player' element by 0.1 (10%)
+          document.getElementById('player').volume += 0.1;
+          // Update the value of the 'VRange' range input to reflect the updated volume
+          document.getElementById('VRange').value = document.getElementById('player').volume * 100
+        }
+        function play() {
+          // Play the media player element with the ID 'player'
+          document.getElementById('player').play();
+        }
+        function pause() {// pause the media player element with the ID 'player'
+          document.getElementById('player').pause()
+        }
+      </script>
+    </div>
+
+    <div class="video-button">
+      <img src="beach.png" alt="Beach" onclick="videoUrl('./video/beach.mp4','./audio/beach.mp3')">
+      <script>
+        function videoUrl(src_video, src_audio) {
+          // Update the source URL of the video element with ID 'bg-video'
+          document.getElementById('bg-video').src = src_video;
+          // Update the source URL of the audio element with ID 'player'
+          document.getElementById('player').src = src_audio;//set audio url
+        };
+      </script>
+      <img src="rain.png" alt="Rain" onclick="videoUrl('./video/rain.mp4','./audio/rain.mp3')">
+      <img src="nature.png" alt="Nature" onclick="videoUrl('./video/nature.mp4','./audio/nature.mp3')">
+    </div>
+  </div>
+
+</body>
+
+</html>

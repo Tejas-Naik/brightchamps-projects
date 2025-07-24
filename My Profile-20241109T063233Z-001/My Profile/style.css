@@ -1,0 +1,159 @@
+body {
+  background: antiquewhite;
+  font-family: cursive;
+  margin: 20px;
+}
+p {
+  color: black;
+}
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+div {
+  margin: 10px;
+  padding: 10px;
+}
+
+img {
+  border: 3px solid black;
+}
+
+.container {
+  background-color: #efd177;
+  border: 2px dashed black;
+}
+
+.container li a {
+  text-align: center;
+  font-family: cursive;
+  font-size: 15px;
+}
+
+nav {
+  text-align: center;
+  display: inline;
+  width: 100%;
+}
+
+nav a {
+  width: 20%;
+  text-decoration: none;
+  color: black;
+}
+
+nav ul {
+  width: 100%;
+}
+
+nav ul li {
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  font-size: 14px;
+  font-family: georgia;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#about {
+  background-color: aquamarine;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+}
+
+#about img {
+  height: 200px;
+  width: 200px;
+}
+
+/*
+#gallery img{
+  height: 200px;
+  width :200px;
+  display:inline;
+}
+*/
+#gallery {
+  background-color: aquamarine;
+  display: inline-block;
+  margin: 30px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+div.column {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.column img {
+  width: 100%;
+  height: 200px;
+}
+
+#sport img,
+#book img {
+  height: 400px;
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#book {
+  background-color: aquamarine;
+  border-radius: 10px;
+}
+
+.aboutBook {
+  margin: 10px;
+  padding: 10px;
+}
+
+#message {
+  border: 2px dashed black;
+  background-color: lightyellow;
+}
+
+#city,
+#sport {
+  border: 8px dotted red;
+}
+
+#projects {
+  background-color: aquamarine;
+  border-radius: 10px;
+}
+
+/*button*/
+button {
+  position: fixed;
+  bottom: 10px;
+  float: right;
+  right: 5%;
+  left: 95%;
+  padding: 0.5px;
+}
+
+button img {
+  position: relative;
+  max-width: 50px;
+}

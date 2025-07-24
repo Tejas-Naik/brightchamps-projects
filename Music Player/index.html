@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rhythm - Your Music Destination</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A modern music player for exploring new music"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <div class="logo-image">
+          <img src="Home_pics/logo-main.jpeg" alt="Logo" />
+        </div>
+        <div class="logo-text">Rhythm</div>
+      </div>
+      <div class="search-container">
+        <input
+          type="text"
+          placeholder="Search for songs, artists..."
+          class="search-input"
+        />
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+      </div>
+      <div class="header-controls">
+        <button class="icon-btn"><i class="fas fa-bell"></i></button>
+        <button class="icon-btn"><i class="fas fa-cog"></i></button>
+        <div class="user-profile">
+          <img
+            src="Home_pics/profile-pic.jpeg"
+            alt="Profile"
+            class="profile-pic"
+          />
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <main>
+        <section class="featured-section">
+          <div class="section-header">
+            <h2><i class="fas fa-star"></i> Trending Tracks</h2>
+            <a href="#" class="view-all">View All</a>
+          </div>
+
+          <div class="carousel-container">
+            <div class="carousel-card">
+              <div class="card-image">
+                <img src="Home_pics/upcoming_1.jpeg" alt="Featured Track" />
+                <div class="overlay">
+                  <button class="play-btn"><i class="fas fa-play"></i></button>
+                </div>
+              </div>
+              <div class="card-info">
+                <h3>Shape of You</h3>
+                <p>Ed Sheeran</p>
+              </div>
+            </div>
+            <div class="carousel-card">
+              <div class="card-image">
+                <img src="Home_pics/upcoming_2.jpeg" alt="Featured Track" />
+                <div class="overlay">
+                  <button class="play-btn"><i class="fas fa-play"></i></button>
+                </div>
+              </div>
+              <div class="card-info">
+                <h3>Stay</h3>
+                <p>The Kid LAROI, Justin Bieber</p>
+              </div>
+            </div>
+            <div class="carousel-card">
+              <div class="card-image">
+                <img src="Home_pics/upcoming_3.jpeg" alt="Featured Track" />
+                <div class="overlay">
+                  <button class="play-btn"><i class="fas fa-play"></i></button>
+                </div>
+              </div>
+              <div class="card-info">
+                <h3>Bounce Back</h3>
+                <p>Little Mix</p>
+              </div>
+            </div>
+            <div class="carousel-card">
+              <div class="card-image">
+                <img src="Home_pics/upcoming_4.jpeg" alt="Featured Track" />
+                <div class="overlay">
+                  <button class="play-btn"><i class="fas fa-play"></i></button>
+                </div>
+              </div>
+              <div class="card-info">
+                <h3>Yesterday</h3>
+                <p>The Beatles</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="new-releases-section">
+          <div class="section-header">
+            <h2><i class="fas fa-music"></i> New Releases</h2>
+            <a href="#" class="view-all">See All</a>
+          </div>
+
+          <div class="releases-grid">
+            <div class="track-card">
+              <div class="track-artwork">
+                <img src="Home_pics/recommended3.jpeg" alt="Album cover" />
+                <div class="card-controls">
+                  <button class="play-btn-large">
+                    <i class="fas fa-play"></i>
+                  </button>
+                  <button class="options-btn">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="track-details">
+                <h3>Imagination</h3>
+                <p>Foster The People</p>
+                <span class="track-date">April 2025</span>
+              </div>
+            </div>
+
+            <div class="track-card">
+              <div class="track-artwork">
+                <img src="Home_pics/recommended4.jpeg" alt="Album cover" />
+                <div class="card-controls">
+                  <button class="play-btn-large">
+                    <i class="fas fa-play"></i>
+                  </button>
+                  <button class="options-btn">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="track-details">
+                <h3>Blinding Lights</h3>
+                <p>The Weeknd</p>
+                <span class="track-date">March 2025</span>
+              </div>
+            </div>
+
+            <div class="track-card">
+              <div class="track-artwork">
+                <img src="Home_pics/recommended6.jpeg" alt="Album cover" />
+                <div class="card-controls">
+                  <button class="play-btn-large">
+                    <i class="fas fa-play"></i>
+                  </button>
+                  <button class="options-btn">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="track-details">
+                <h3>Imagination</h3>
+                <p>Shawn Mendes</p>
+                <span class="track-date">February 2025</span>
+              </div>
+            </div>
+
+            <div class="track-card">
+              <div class="track-artwork">
+                <img src="Home_pics/carousel2.jpeg" alt="Album cover" />
+                <div class="card-controls">
+                  <button class="play-btn-large">
+                    <i class="fas fa-play"></i>
+                  </button>
+                  <button class="options-btn">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="track-details">
+                <h3>Heavy</h3>
+                <p>Linkin Park ft. Kiiara</p>
+                <span class="track-date">January 2025</span>
+              </div>
+            </div>
+
+            <div class="track-card">
+              <div class="track-artwork">
+                <img src="Home_pics/attention.png" alt="Album cover" />
+                <div class="card-controls">
+                  <button class="play-btn-large">
+                    <i class="fas fa-play"></i>
+                  </button>
+                  <button class="options-btn">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="track-details">
+                <h3>Attention</h3>
+                <p>Charlie Puth</p>
+                <span class="track-date">December 2024</span>
+              </div>
+            </div>
+
+            <div class="track-card">
+              <div class="track-artwork">
+                <img src="Home_pics/happier.jpeg" alt="Album cover" />
+                <div class="card-controls">
+                  <button class="play-btn-large">
+                    <i class="fas fa-play"></i>
+                  </button>
+                  <button class="options-btn">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="track-details">
+                <h3>Happier</h3>
+                <p>Marshmello ft. Bastille</p>
+                <span class="track-date">November 2024</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="artists-section">
+          <div class="section-header">
+            <h2><i class="fas fa-user-friends"></i> Popular Artists</h2>
+            <a href="#" class="view-all">View All</a>
+          </div>
+          <div class="section-content">
+            <div class="artist-image">
+              <img src="Home_pics/shawn-mendes-main.jpeg" />
+              <a href="artist.html" target="_blank">
+                <div class="artist-details">
+                  <p>Shawn Mendes</p>
+                </div>
+              </a>
+            </div>
+            <div class="artist-image max-height">
+              <img src="Home_pics/charlie-puth.jpeg" />
+              <a href="artist.html" target="_blank">
+                <div class="artist-details">
+                  <p>Charlie Puth</p>
+                </div>
+              </a>
+            </div>
+            <div class="artist-image max-height">
+              <img src="Home_pics/taylor swift.jpeg" />
+              <a href="artist.html" target="_blank">
+                <div class="artist-details">
+                  <p>Camila Cabello</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="artist-image max-height">
+              <img src="Home_pics/taylor swift1.jpeg" />
+              <a href="artist.html" target="_blank">
+                <div class="artist-details">
+                  <p>Taylor Swift</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="artist-image max-height">
+              <img src="Home_pics/chainsmokers-main.jpeg" />
+              <a href="artist.html" target="_blank">
+                <div class="artist-details">
+                  <p>The Chainsmokers</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="station">
+          <h1 class="section-heading">
+            <span id="skill-icon"><i class="fab fa-soundcloud"></i></span>
+            <span>Stations</span>
+          </h1>
+          <div class="section-content">
+            <div class="station-image">
+              <img src="Home_pics/station1.jpeg" />
+              <div class="station-details">
+                <p>Love</p>
+              </div>
+            </div>
+            <div class="station-image">
+              <img src="Home_pics/station2.jpeg" />
+              <div class="station-details">
+                <p>Retro</p>
+              </div>
+            </div>
+            <div class="station-image">
+              <img src="Home_pics/station3.jpeg" />
+              <div class="station-details">
+                <p>Chill</p>
+              </div>
+            </div>
+            <div class="station-image">
+              <img src="Home_pics/station4.jpeg" />
+              <div class="station-details">
+                <p>Rock</p>
+              </div>
+            </div>
+            <div class="station-image">
+              <img src="Home_pics/station3.jpeg" />
+              <div class="station-details">
+                <p>Workout</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mood">
+          <h1 class="section-heading">
+            <span id="skill-icon"><i class="fas fa-brain"></i></span>
+            <span>Mood</span>
+          </h1>
+          <div class="section-content">
+            <div class="mood-image">
+              <img src="Home_pics/party.jpeg" />
+              <div class="mood-details"><h3>Party</h3></div>
+            </div>
+            <div class="mood-image">
+              <img src="Home_pics/electronic.jpeg" />
+              <div class="mood-details"><h3>Electronic</h3></div>
+            </div>
+
+            <div class="mood-image">
+              <img src="Home_pics/nostalgic.jpeg" />
+              <div class="mood-details"><h3>Nostalgic</h3></div>
+            </div>
+
+            <div class="mood-image">
+              <img src="Home_pics/rain.jpeg" />
+              <div class="mood-details"><h3>Alone</h3></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="latest_english">
+          <h1 class="section-heading">
+            <span id="skill-icon"><i class="fas fa-compact-disc"></i></span>
+            <span>Latest-English</span>
+          </h1>
+          <div class="section-content">
+            <a href="#floating-div">
+              <div class="song-tile">
+                <div class="song-tile-image">
+                  <img src="Home_pics/latest-english1.jpeg" />
+                </div>
+                <h3>Kaleidoscope</h3>
+                <h4>12/08/2021</h4>
+                <div class="play-icon"><i class="fas fa-play"></i></div>
+              </div>
+            </a>
+
+            <a href="#floating-div">
+              <div class="song-tile">
+                <div class="song-tile-image">
+                  <img src="Home_pics/upcoming_1.jpeg" />
+                </div>
+                <h3>Fifty Shades</h3>
+                <h4>05/11/2020</h4>
+                <div class="play-icon"><i class="fas fa-play"></i></div>
+              </div>
+            </a>
+
+            <a href="#floating-div">
+              <div class="song-tile">
+                <div class="song-tile-image">
+                  <img src="Home_pics/latest-english3.jpeg" />
+                </div>
+                <h3>Regret</h3>
+                <h4>6/01/2019</h4>
+                <div class="play-icon"><i class="fas fa-play"></i></div>
+              </div>
+            </a>
+
+            <a href="#floating-div">
+              <div class="song-tile">
+                <div class="song-tile-image">
+                  <img src="Home_pics/latest-english1.jpeg" />
+                </div>
+                <h3>Save Myself</h3>
+                <h4>11/02/2018</h4>
+                <div class="play-icon"><i class="fas fa-play"></i></div>
+              </div>
+            </a>
+
+            <a href="#floating-div">
+              <div class="song-tile">
+                <div class="song-tile-image">
+                  <img src="Home_pics/latest-english4.jpeg" />
+                </div>
+                <h3>It Ain’t Me</h3>
+                <h4>21/04/2017</h4>
+                <div class="play-icon"><i class="fas fa-play"></i></div>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- assignment 2 later-->
+        <section class="latest_hindi">
+          <h1 class="section-heading">
+            <span id="skill-icon"><i class="fas fa-compact-disc"></i></span>
+            <span>Latest-Hindi</span>
+          </h1>
+          <div class="section-content">
+            <a href="#floating-div">
+              <div class="song-tile play-song">
+                <div class="song-tile-image">
+                  <img src="Home_pics/latest-hindi1.jpeg" />
+                </div>
+                <h3>Song</h3>
+                <h4>Date</h4>
+                <div class="play-icon"><i class="fas fa-play"></i></div>
+              </div>
+            </a>
+
+            <a href="#floating-div">
+              <div class="song-tile play-song">
+                <div class="song-tile-image">
+                  <img src="Home_pics/latest-hindi2.jpeg" />
+                </div>
+                <h3>Song</h3>
+                <h4>Date</h4>
+                <div class="play-icon"><i class="fas fa-play"></i></div>
+              </div>
+            </a>
+
+            <a href="#floating-div">
+              <div class="song-tile play-song">
+                <div class="song-tile-image">
+                  <img src="Home_pics/latest-hindi1.jpeg" />
+                </div>
+                <h3>Song</h3>
+                <h4>Date</h4>
+                <div class="play-icon"><i class="fas fa-play"></i></div>
+              </div>
+            </a>
+
+            <a href="#floating-div">
+              <div class="song-tile play-song">
+                <div class="song-tile-image">
+                  <img src="Home_pics/latest-hindi3.jpeg" />
+                </div>
+                <h3>Song</h3>
+                <h4>Date</h4>
+                <div class="play-icon"><i class="fas fa-play"></i></div>
+              </div>
+            </a>
+
+            <a href="#floating-div">
+              <div class="song-tile play-song">
+                <div class="song-tile-image">
+                  <img src="Home_pics/latest-hindi4.jpeg" />
+                </div>
+                <h3>Song</h3>
+                <h4>Date</h4>
+                <div class="play-icon"><i class="fas fa-play"></i></div>
+              </div>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <div class="sidebar">
+        <div class="sidebar-section">
+          <div class="section-header">
+            <h2><i class="fas fa-headphones"></i> For You</h2>
+          </div>
+          <div class="recommended-tracks">
+            <div class="recommended-item">
+              <img src="Home_pics/r1.jpeg" alt="Track" />
+              <div class="recommended-info">
+                <h3>Beautiful</h3>
+                <p>One Direction</p>
+              </div>
+              <button class="like-btn"><i class="far fa-heart"></i></button>
+              <button class="play-now-btn"><i class="fas fa-play"></i></button>
+            </div>
+            <div class="recommended-item">
+              <img src="Home_pics/r2.jpeg" alt="Track" />
+              <div class="recommended-info">
+                <h3>Let it Go</h3>
+                <p>Idina Menzel</p>
+              </div>
+              <button class="like-btn"><i class="far fa-heart"></i></button>
+              <button class="play-now-btn"><i class="fas fa-play"></i></button>
+            </div>
+            <div class="recommended-item">
+              <img src="Home_pics/r3.jpeg" alt="Track" />
+              <div class="recommended-info">
+                <h3>Royals</h3>
+                <p>Lorde</p>
+              </div>
+              <button class="like-btn"><i class="far fa-heart"></i></button>
+              <button class="play-now-btn"><i class="fas fa-play"></i></button>
+            </div>
+            <div class="recommended-item">
+              <img src="Home_pics/r4.jpeg" alt="Track" />
+              <div class="recommended-info">
+                <h3>All the Things</h3>
+                <p>tATu</p>
+              </div>
+              <button class="like-btn"><i class="far fa-heart"></i></button>
+              <button class="play-now-btn"><i class="fas fa-play"></i></button>
+            </div>
+            <div class="recommended-item">
+              <img src="Home_pics/r5.jpeg" alt="Track" />
+              <div class="recommended-info">
+                <h3>Dancing</h3>
+                <p>Martha Reeves</p>
+              </div>
+              <button class="like-btn"><i class="far fa-heart"></i></button>
+              <button class="play-now-btn"><i class="fas fa-play"></i></button>
+            </div>
+            <div class="recommended-item">
+              <img src="Home_pics/r6.jpeg" alt="Track" />
+              <div class="recommended-info">
+                <h3>I Love It</h3>
+                <p>Icona Pop</p>
+              </div>
+              <button class="like-btn"><i class="far fa-heart"></i></button>
+              <button class="play-now-btn"><i class="fas fa-play"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="now-playing-bar">
+        <div class="now-playing-left">
+          <div class="current-track-img">
+            <img src="Home_pics/happier.jpeg" alt="Currently playing" />
+          </div>
+          <div class="current-track-info">
+            <div class="track-name">Happier</div>
+            <div class="artist-name">Marshmello ft. Bastille</div>
+          </div>
+          <button class="like-btn"><i class="far fa-heart"></i></button>
+        </div>
+
+        <div class="now-playing-center">
+          <div class="player-controls">
+            <button class="control-btn shuffle">
+              <i class="fas fa-random"></i>
+            </button>
+            <button class="control-btn previous">
+              <i class="fas fa-step-backward"></i>
+            </button>
+            <button class="control-btn play">
+              <i class="fas fa-play-circle"></i>
+            </button>
+            <button class="control-btn next">
+              <i class="fas fa-step-forward"></i>
+            </button>
+            <button class="control-btn repeat">
+              <i class="fas fa-redo"></i>
+            </button>
+          </div>
+          <div class="playback-bar">
+            <span class="current-time">0:20</span>
+            <div class="progress-container">
+              <div class="progress-bar">
+                <input
+                  type="range"
+                  class="progress-slider"
+                  min="0"
+                  max="100"
+                  value="15"
+                />
+                <div class="progress-completed"></div>
+              </div>
+            </div>
+            <span class="total-time">3:28</span>
+          </div>
+        </div>
+
+        <div class="now-playing-right">
+          <button class="control-btn"><i class="fas fa-list"></i></button>
+          <button class="control-btn"><i class="fas fa-volume-up"></i></button>
+          <div class="volume-bar">
+            <input
+              type="range"
+              class="volume-slider"
+              min="0"
+              max="100"
+              value="70"
+            />
+          </div>
+          <button class="control-btn"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

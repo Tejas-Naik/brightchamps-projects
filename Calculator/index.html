@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Calculator</h1>
+    <table id="whole">
+      <tr>
+        <td colspan="4" id="display"></td>
+      </tr>
+      <tr>
+        <td onclick="display('1')">1</td>
+        <td onclick="display('2')">2</td>
+        <td onclick="display('3')">3</td>
+        <td class="special" onclick="display('+')">+</td>
+      </tr>
+      <tr>
+        <td onclick="display('4')">4</td>
+        <td onclick="display('5')">5</td>
+        <td onclick="display('6')">6</td>
+        <td class="special" onclick="display('-')">-</td>
+      </tr>
+      <tr>
+        <td onclick="display('7')">7</td>
+        <td onclick="display('8')">8</td>
+        <td onclick="display('9')">9</td>
+        <td class="special" onclick="display('*')">*</td>
+      </tr>
+      <tr>
+        <td class="special" onclick="clearscreen()">C</td>
+        <td onclick="display('0')">0</td>
+        <td onclick="display('/')">/</td>
+        <td class="special" onclick="equals()">=</td>
+      </tr>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>

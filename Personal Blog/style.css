@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+section {
+  width: 100%;
+  /*display: flex;
+	flex-direction: column;
+	align-items: center;*/
+}
+section::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.section-heading {
+  color: blue;
+  font-size: 35px;
+  padding: 4rem;
+}
+/*header*/
+/*background-attachment: fixed;*/
+#header-resume {
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  padding-top: 14px;
+  opacity: 0.8;
+}
+
+#header-nav ul {
+  word-spacing: 20px;
+}
+
+#header-nav li {
+  display: inline-block;
+}
+
+#header-nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-menu li a {
+  transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+  color: lightgrey;
+  border-bottom: 1px solid black;
+}
+
+#name-container {
+  margin-top: 150px;
+  font-size: 30px;
+}
+
+#myName {
+  color: white;
+}
+/*About Section*/
+
+#about-section {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+#myPhoto img {
+  margin-top: -120px;
+  border: 4px solid white;
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 6px 4px lightgrey;
+}
+
+#about-profile {
+  color: grey;
+  width: 80%;
+  padding: 20px;
+  margin: auto;
+}
+
+/*skill section*/
+
+#skills {
+  width: 100%;
+}
+
+/* skills parent container */
+.skills-display {
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+/* making each of six child div as progress bar */
+
+.skill-progress {
+  background-color: grey;
+  width: 176px;
+  height: 35px;
+  border-radius: 16px;
+  margin: 22px;
+  overflow: hidden;
+  border-width: 1px;
+  box-shadow: 1px 1px 2px 1px lightgoldenrodyellow;
+}
+
+.skill-box {
+  box-shadow: 1px 1px 5px 2px grey;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.skill-name span {
+  color: white;
+  margin-left: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.col-3 {
+  float: left;
+  width: 30%;
+}
+
+/*favourites section*/
+
+.col-2 {
+  float: left;
+  width: 45%;
+  margin: 20px;
+  padding: 10px;
+}
+
+#favourites img {
+  width: 500px;
+  border: 2px dashed darkblue;
+  height: 500px;
+}
+
+#favourites span {
+  margin: 20px;
+}
+
+/*education section*/
+
+#education {
+  width: 100%;
+}
+
+#education img {
+  width: 1000px;
+  height: 500px;
+}
+
+/*portfolio section*/
+#portfolio .col-3 {
+  width: 31.7%;
+  margin: 10px;
+}
+
+.portfolio-display {
+  margin-bottom: 30px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.portfolio-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 10px;
+  position: relative;
+}
+
+.portfolio-img img {
+  width: 390px;
+  height: 312px;
+}
+
+.portfolio-text {
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  height: 100%;
+  color: transparent;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+/*display: none;*/
+/*font-size: 1.5rem;*/
+
+.portfolio-img:hover {
+  box-shadow: 1px 1px 1px lightseagreen;
+}
+
+.portfolio-img:hover .portfolio-text {
+  background-color: grey;
+  opacity: 0.5;
+  color: white;
+}
+
+/*percentage for skills*/
+.fifty-percent {
+  height: inherit;
+  width: 50%;
+}
+
+.eighty-five-percent {
+  height: inherit;
+  width: 85%;
+}
+
+.eighty-percent {
+  height: inherit;
+  width: 80%;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.light-purple {
+  background-color: purple;
+}
+
+.teal {
+  background-color: teal;
+}
+
+.text-right {
+  text-align: right;
+}

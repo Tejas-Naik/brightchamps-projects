@@ -1,0 +1,36 @@
+body {
+  background: #fff5ee;
+  font-family: "Poppins", sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+.container {
+  clear: both;
+  overflow: auto;
+}
+
+nav {
+  float: right;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  color: green;
+}
+
+.container ul li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.container ul li:hover {
+  color: orange;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WriterZone</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="sidebar">
+      <div class="logo">
+        <h1>Writer<span>Zone</span></h1>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#home"><i class="fa fa-home"></i> <span>Home</span></a>
+        </li>
+        <li>
+          <a href="#explore"
+            ><i class="fa fa-globe"></i> <span>Explore</span></a
+          >
+        </li>
+        <li>
+          <a href="#feeds"
+            ><i class="fa fa-newspaper"></i> <span>Feeds</span></a
+          >
+        </li>
+      </ul>
+      <ul class="bottom-links">
+        <li>
+          <a href="#"><i class="fa fa-power-off"></i> <span>Logout</span></a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <header class="top-nav">
+        <button id="menu-toggle" class="icon-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="search-container">
+          <i class="fa fa-search"></i>
+          <input type="text" placeholder="Search here..." />
+        </div>
+      </header>
+
+      <section id="home" class="section center">
+        <div class="hero">
+          <h1 class="glitch" data-text="WRITING">WRITING</h1>
+          <h2 class="wave-text">ZONE</h2>
+          <p>Your daily dose of writing inspiration and stories.</p>
+          <a href="#explore" class="btn">Explore</a>
+        </div>
+      </section>
+
+      <section id="explore" class="section">
+        <div class="grid-container">
+          <!-- Example Grid Box -->
+          <div class="grid-box">
+            <h3>Lorem Ipsum Title</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              sed mauris et dignissim.
+            </p>
+            <a href="#" class="read-btn">Read</a>
+          </div>
+          <!-- Repeat as needed -->
+        </div>
+      </section>
+
+      <section id="feeds" class="section center">
+        <div class="post">
+          <h2>Post Title</h2>
+          <div class="post-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          </div>
+          <div class="post-footer">
+            <span class="interaction">❤ 12</span>
+          </div>
+        </div>
+        <div class="post">
+          <h2>Post Title</h2>
+          <div class="post-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          </div>
+          <div class="post-footer">
+            <span class="interaction">❤ 12</span>
+          </div>
+        </div>
+        <div class="post">
+          <h2>Post Title</h2>
+          <div class="post-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          </div>
+          <div class="post-footer">
+            <span class="interaction">❤ 12</span>
+          </div>
+        </div>
+        <div class="post">
+          <h2>Post Title</h2>
+          <div class="post-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          </div>
+          <div class="post-footer">
+            <span class="interaction">❤ 12</span>
+          </div>
+        </div>
+        <div class="post">
+          <h2>Post Title</h2>
+          <div class="post-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          </div>
+          <div class="post-footer">
+            <span class="interaction">❤ 12</span>
+          </div>
+        </div>
+        <div class="post">
+          <h2>Post Title</h2>
+          <div class="post-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          </div>
+          <div class="post-footer">
+            <span class="interaction">❤ 12</span>
+          </div>
+        </div>
+        <div class="post">
+          <h2>Post Title</h2>
+          <div class="post-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          </div>
+          <div class="post-footer">
+            <span class="interaction">❤ 12</span>
+          </div>
+        </div>
+        <div class="post">
+          <h2>Post Title</h2>
+          <div class="post-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          </div>
+          <div class="post-footer">
+            <span class="interaction">❤ 12</span>
+          </div>
+        </div>
+        <div class="post">
+          <h2>Post Title</h2>
+          <div class="post-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          </div>
+          <div class="post-footer">
+            <span class="interaction">❤ 12</span>
+          </div>
+        </div>
+        <div class="post">
+          <h2>Post Title</h2>
+          <div class="post-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          </div>
+          <div class="post-footer">
+            <span class="interaction">❤ 12</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      document.getElementById("menu-toggle").addEventListener("click", () => {
+        document.querySelector("nav").classList.toggle("collapsed");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+Python Classes and Inheritance - Study Notes
+
+1. Classes in Python
+------------------
+- A class is a blueprint for creating objects
+- Objects are instances of a class
+- Classes can contain:
+  * Instance variables (unique to each object)
+  * Class variables (shared among all objects)
+  * Methods (functions that belong to the class)
+
+2. Important Class Concepts
+-------------------------
+a) __init__ method:
+   - Special method called when object is created
+   - Used to initialize object attributes
+   - 'self' parameter refers to the current object
+
+b) Instance Variables:
+   - Unique to each instance/object
+   - Defined using self.variable_name
+   - Example: self.name = name
+
+c) Class Variables:
+   - Shared among all instances of the class
+   - Defined directly in class
+   - Example: age = 12
+
+3. Object Creation
+----------------
+- Objects are created by calling the class name
+- Example: student1 = Student("John")
+- Each object can have different values for instance variables
+
+4. Inheritance
+------------
+- Allows a class to inherit attributes and methods from another class
+- Parent class (base class) → Child class (derived class)
+- Syntax: class ChildClass(ParentClass):
+- Example: Tiger/Lion/Cat inheriting from Animal class
+- Benefits:
+  * Code reusability
+  * Extends functionality of existing code
+  * Promotes hierarchical classification
+
+5. Types of Inheritance
+---------------------
+a) Single Inheritance:
+   - One child class inherits from one parent class
+   - Example: Tiger inheriting from Animal class
+
+b) Method Overriding:
+   - Child class can have different implementation of parent's methods
+   - Example: Different make_sound() methods in Tiger and Lion classes
+
+6. Best Practices
+---------------
+- Use meaningful class and variable names
+- Follow Python naming conventions
+- Document your classes and methods
+- Keep classes focused and single-purpose
+- Use inheritance when there is a clear "is-a" relationship
