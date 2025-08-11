@@ -229,12 +229,10 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /*resized to fit its container*/
 }
 
 .menu-card:hover .menu-img {
   transform: scale(1.05);
-  /*scaling image*/
 }
 
 .menu-card .wrapper {

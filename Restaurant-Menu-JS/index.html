@@ -7,11 +7,12 @@
     <!-- font-awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- styles -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -19,102 +20,148 @@
     <section class="menu">
       <!-- title -->
       <div class="title">
-      <h2 class="animate__animated animate__bounce "> our menu</h2>  
-      <div class="animate__rubberBand underline" ></div>
+        <h2 class="animate__animated animate__bounce">our menu</h2>
+        <div class="animate__rubberBand underline"></div>
       </div>
       <!-- filter buttons -->
       <div class="btn-container">
         <button type="button" class="filter-btn" data-id="all">all</button>
-        <button type="button" class="filter-btn" data-id="breakfast">breakfast</button>
+        <button type="button" class="filter-btn" data-id="breakfast">
+          breakfast
+        </button>
         <button type="button" class="filter-btn" data-id="lunch">lunch</button>
-        <button type="button" class="filter-btn" data-id="shakes">shakes</button>
+        <button type="button" class="filter-btn" data-id="shakes">
+          shakes
+        </button>
       </div>
       <!-- menu items -->
       <div class="section-center">
         <!-- single item -->
-        <article class="menu-item">
-          <img src="menu-item.jpeg" alt="menu item" class="photo"/>
-          <div class="item-info">
-            <header>
-              <h4>buttermilk pancakes</h4>
-              <h4 class="price">$15</h4>
-            </header>
-            <p class="item-text ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
-              laboriosam excepturi! Quo, officia.
-            </p>
-          </div>
-        </article>
-        <!-- end of single item -->
-        <!-- single item -->
-        <article class="menu-item">
-          <img src="./menu-item.jpeg" alt="menu item" class="photo" />
-          <div class="item-info">
-            <header>
-              <h4 >buttermilk pancakes</h4>
-              <h4 class="price">$15</h4>
-            </header>
-            <p class="item-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
-              laboriosam excepturi! Quo, officia.
-            </p>
-          </div>
-        </article>
-        <!-- end of single item -->
-        <!-- single item -->
-        <article class="menu-item">
-          <img src="./menu-item.jpeg" alt="menu item" class="photo " />
+        <article class="menu-item" data-id="breakfast">
+          <img src="menu-item.jpg" alt="buttermilk pancakes" class="photo" />
           <div class="item-info">
             <header>
               <h4>buttermilk pancakes</h4>
               <h4 class="price">$15</h4>
             </header>
             <p class="item-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
-              laboriosam excepturi! Quo, officia.
+              Fluffy, golden pancakes made with fresh buttermilk and served with
+              butter and maple syrup. A classic breakfast favorite that melts in
+              your mouth.
+            </p>
+          </div>
+        </article>
+        <!-- end of single item -->
+        <!-- single item -->
+        <article class="menu-item" data-id="breakfast">
+          <img src="menu-item.jpg" alt="avocado toast" class="photo" />
+          <div class="item-info">
+            <header>
+              <h4>avocado toast</h4>
+              <h4 class="price">$12</h4>
+            </header>
+            <p class="item-text">
+              Fresh smashed avocado on artisan sourdough bread, topped with
+              cherry tomatoes, feta cheese, and a drizzle of olive oil.
+            </p>
+          </div>
+        </article>
+        <!-- end of single item -->
+        <!-- single item -->
+        <article class="menu-item" data-id="lunch">
+          <img src="menu-item.jpg" alt="grilled chicken salad" class="photo" />
+          <div class="item-info">
+            <header>
+              <h4>grilled chicken salad</h4>
+              <h4 class="price">$18</h4>
+            </header>
+            <p class="item-text">
+              Tender grilled chicken breast served over mixed greens with cherry
+              tomatoes, cucumbers, and balsamic vinaigrette dressing.
+            </p>
+          </div>
+        </article>
+        <!-- end of single item -->
+        <!-- single item -->
+        <article class="menu-item" data-id="lunch">
+          <img src="menu-item.jpg" alt="beef burger" class="photo" />
+          <div class="item-info">
+            <header>
+              <h4>classic beef burger</h4>
+              <h4 class="price">$16</h4>
+            </header>
+            <p class="item-text">
+              Juicy beef patty with lettuce, tomato, onion, pickles, and special
+              sauce on a toasted brioche bun. Served with crispy fries.
+            </p>
+          </div>
+        </article>
+        <!-- end of single item -->
+        <!-- single item -->
+        <article class="menu-item" data-id="shakes">
+          <img src="menu-item.jpg" alt="chocolate milkshake" class="photo" />
+          <div class="item-info">
+            <header>
+              <h4>chocolate milkshake</h4>
+              <h4 class="price">$8</h4>
+            </header>
+            <p class="item-text">
+              Rich and creamy chocolate milkshake made with premium vanilla ice
+              cream and chocolate syrup. Topped with whipped cream.
+            </p>
+          </div>
+        </article>
+        <!-- end of single item -->
+        <!-- single item -->
+        <article class="menu-item" data-id="shakes">
+          <img src="menu-item.jpg" alt="strawberry shake" class="photo" />
+          <div class="item-info">
+            <header>
+              <h4>strawberry delight</h4>
+              <h4 class="price">$9</h4>
+            </header>
+            <p class="item-text">
+              Fresh strawberry milkshake blended with real strawberries and
+              vanilla ice cream. A refreshing and fruity treat.
             </p>
           </div>
         </article>
         <!-- end of single item -->
       </div>
     </section>
-    
-    <section class="container >
-        <!-- title -->
-        <div class="title">
-          <h2>our reviews</h2>
-          <div class="underline"></div>
+
+    <section class="container">
+      <!-- title -->
+      <div class="title">
+        <h2>our reviews</h2>
+        <div class="underline"></div>
+      </div>
+      <!-- review -->
+      <article class="review">
+        <div class="img-container">
+          <img src="person-1.jpg" id="person-img" alt="" />
         </div>
-        <!-- review -->
-        <article class="review">
-          <div class="img-container">
-            <img src="person-1.jpeg" id="person-img" alt="" />
-          </div>
-          <h4 id="author">sara jones</h4>
-          <p id="job">ux designer</p>
-          <p id="info">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-            asperiores debitis incidunt, eius earum ipsam cupiditate libero?
-            Iste, doloremque nihil?
-          </p>
-          <!-- prev next buttons-->
-          <div class="button-container">
-            <button class="prev-btn">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="next-btn">
-              <i class="fas fa-chevron-right"></i>
-            </button>
-          </div>
-          <!-- random button -->
-          <button class="random-btn">surprise me</button>
-        </article>
-      </section>
+        <h4 id="author">sara jones</h4>
+        <p id="job">ux designer</p>
+        <p id="info">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+          asperiores debitis incidunt, eius earum ipsam cupiditate libero? Iste,
+          doloremque nihil?
+        </p>
+        <!-- prev next buttons-->
+        <div class="button-container">
+          <button class="prev-btn">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="next-btn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        <!-- random button -->
+        <button class="random-btn">surprise me</button>
+      </article>
+    </section>
     <!-- javascript -->
     <script src="script.js"></script>
   </body>
 </html>
-

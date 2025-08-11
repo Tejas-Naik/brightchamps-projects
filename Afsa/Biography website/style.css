@@ -129,10 +129,7 @@ nav a:hover:after {
 .about p {
   text-align: justify;
   line-height: 30px;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
   font-size: 20px;
 }
 
