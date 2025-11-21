@@ -22,11 +22,11 @@ def draw_circle(col="white", rad=50):
   turtle.circle(rad)
   turtle.end_fill()
 
-# draw_circle("red")
-# draw_circle("orange", 40)
-# draw_circle("blue", 30)
-# draw_circle("yellow", 20)
-# draw_circle("green", 10)
+draw_circle("red")
+draw_circle("orange", 40)
+draw_circle("blue", 30)
+draw_circle("yellow", 20)
+draw_circle("green", 10)
 
 def draw_face():
   # Draw face

@@ -221,17 +221,17 @@ section::before {
 
 .section-header h2 i {
   color: #ff5858;
-  filter: drop-shadow(0 0 5px rgba(255, 88, 88, 0.5));
+  filter: drop-shadow(0 0 5px #ff585880);
 }
 
 .view-all {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffffcc;
   transition: all 0.3s ease;
   padding: 0.4rem 1rem;
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #ffffff14;
+  border: 1px solid #ffffff1a;
   font-weight: 500;
 }
 
@@ -253,12 +253,12 @@ section::before {
 }
 
 .carousel-card {
-  background: rgba(255, 255, 255, 0.07);
+  background: #ffffff12;
   border-radius: 16px;
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 20px #00000026;
+  border: 1px solid #ffffff0d;
   position: relative;
 }
 

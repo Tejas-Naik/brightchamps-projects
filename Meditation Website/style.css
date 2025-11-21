@@ -3,19 +3,17 @@ html {
   width: 100%;
 }
 
-/*********** Universial Selector**********/
+/*********** Universial Selector **********/
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-/***********video**********/
+/*********** video **********/
 .video {
-  /*width of video to 100% of the viewport height (vh)*/
   width: 100vw;
   height: 100vh;
-  /*remains in a fixed position even when the user scrolls the webpage*/
   position: fixed;
   top: 0px;
   left: 0px;
@@ -23,13 +21,10 @@ html {
 }
 
 .video video {
-  /* postion at center*/
   position: absolute;
   top: 50%;
   left: 50%;
-
   transform: translate(-50%, -50%);
-  /* should be at least as wide as its containing element. */
   min-width: 100%;
   min-height: 100%;
 }
@@ -48,39 +43,23 @@ html {
     "a a a a a v";
 }
 
-/* focus*/
+/* focus */
 .focus {
-  /*f - focus area*/
-  /* Places the element within a grid area named 'f' */
   grid-area: f;
-  /* Sets the width to 80% of the viewport width */
   width: 80vw;
-  /* Sets the height to 50% of the viewport height */
   height: 50vh;
-  /* Displays the element as a grid container */
   display: grid;
-  /* Horizontally centers the content within the grid container */
   justify-content: center;
-  /* Vertically centers the content within the grid container */
   align-items: center;
-  /* Sets the opacity of the element to 0.5 (semi-transparent) */
   opacity: 0.5;
 }
-
 .focus div {
-  /* Sets the background color of the div to lightsteelblue */
   background-color: lightsteelblue;
-  /* Sets the width of the div to 10 pixels */
   width: 10px;
-  /* Sets the height of the div to 10 pixels */
   height: 10px;
-  /* Adds left margin of 30 pixels */
   margin-left: 30px;
-  /* Makes the div a circle by setting border-radius to 50% */
   border-radius: 50%;
-  /* Displays the div as an inline block element */
   display: inline-block;
-  /* Applies the 'breath' animation to the div */
   animation: breath 8s ease infinite none running;
 }
 
@@ -94,18 +73,11 @@ html {
   }
 }
 
-/* Styles for the element <div> with class .focus-heading */
 .focus-heading {
-  /* Places the element within a grid area named 'h' */
   grid-area: h;
-  /* Sets the width to 50% of the viewport width */
   width: 80vw;
-  /* Sets the height to 10% of the viewport height */
   height: 10vh;
-
-  /* Sets the left margin to 350px */
   margin-left: 0vw;
-  /* Sets the text color to white */
   margin-top: 1vw;
   color: #fff;
   font-size: 5vh;
@@ -114,19 +86,12 @@ html {
   align-items: center;
 }
 
-/* Styles for the element <div>  with class .focus-text */
 .focus-text {
-  /* Places the element within a grid area named 's' */
   grid-area: s;
-  /* Sets the width to 50% of the viewport width */
   width: 70vw;
-  /* Sets the height to 10% of the viewport height */
   height: 20vh;
-  /* Adds padding around the content within the element */
   padding-left: 10vw;
-  /* Sets the left margin to 350px */
   margin-left: 0vw;
-  /* Sets the text color to white */
   color: #fff;
   display: grid;
   text-align: center;
@@ -136,74 +101,35 @@ html {
 
 /* AUDIO */
 .audio {
-  /* Places the element within a grid area named 'a' */
   grid-area: a;
-
-  /* Sets the width to 70% of the viewport width */
   width: 80vw;
-
-  /* Sets the height to 20% of the viewport height */
   height: 20vh;
-
-  /* Displays the element as a flex container */
   display: flex;
-
-  /* Centers items vertically within the container */
   align-items: center;
-
-  /* Centers items horizontally within the container */
   justify-content: center;
-
-  /* Adds a gap between flex items */
-  gap: 20px;
-
-  /* Sets the opacity of the element to 0.5 (semi-transparent) */
   opacity: 0.5;
-
-  /* Sets the left margin to 100px */
   margin-left: 0vw;
 }
 
 .audio img {
-  /* Sets the width of the image to 50 pixels */
   width: 50px;
-
-  /* Changes the cursor to a pointer when hovering over the image */
   cursor: pointer;
 }
 
 .video-button {
-  /* Places the element within a grid area named 'v' */
   grid-area: v;
-  /* Sets the width to 20% of the viewport width */
   width: 20vw;
-
-  /* Sets the height to 100% of the viewport height (using 'wh' unit) */
   height: 100vh;
-
-  /* Displays the element as a flex container */
   display: flex;
-
-  /* Aligns flex items vertically */
   flex-direction: column;
-
-  /* Centers items horizontally within the flex container */
   align-items: center;
-
-  /* Distributes space evenly around flex items */
   justify-content: space-around;
-
-  /* Adds padding that takes up 40% of the height of the element vertically */
   padding: 10% 0;
-  /* Sets the opacity of the element to 0.5 (semi-transparent) */
   opacity: 0.5;
 }
 
 .video-button img {
-  /* Sets the width of the image to 75 pixels */
   width: 75px;
-  /* Changes the cursor to a pointer when hovering over the image */
   cursor: pointer;
-  /* Applies a drop shadow effect to the image */
   filter: drop-shadow(0px 0px 15px #222);
 }

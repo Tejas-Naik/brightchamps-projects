@@ -36,32 +36,23 @@
       </audio>
 
       <img src="pause-button.png" alt="pause" onclick="pause()">
-
       <img src="volume-down.png" alt="Down" onclick="down()">
-
       <input type="range" min="1" max="100" value="100" id="VRange">
-
       <img src="volume-up.png" alt="Up" onclick="up()">
-
       <img src="play-button.png" alt="play" onclick="play()">
       <script>
         function down() {
-          // Decrease the volume of the 'player' element by 0.1 (10%)
           document.getElementById('player').volume -= 0.1;
-          // Update the value of the 'VRange' range input to reflect the updated volume
           document.getElementById('VRange').value = document.getElementById('player').volume * 100
         }
         function up() {
-          // Increase the volume of the 'player' element by 0.1 (10%)
           document.getElementById('player').volume += 0.1;
-          // Update the value of the 'VRange' range input to reflect the updated volume
           document.getElementById('VRange').value = document.getElementById('player').volume * 100
         }
         function play() {
-          // Play the media player element with the ID 'player'
           document.getElementById('player').play();
         }
-        function pause() {// pause the media player element with the ID 'player'
+        function pause() {
           document.getElementById('player').pause()
         }
       </script>

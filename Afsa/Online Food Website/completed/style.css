@@ -385,28 +385,16 @@ footer {
   padding: 0px;
   border: 0px;
   height: 100px;
-  /*add background effects*/
   border-top: 1px solid hsla(0, 0%, 0%, 0.05);
   box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.05);
-  /*apply shadow*/
   z-index: 5;
-  /*placed in front */
 }
 
 .footer-wrapper {
-  /* Add padding of 20px to all sides of the element */
   padding: 20px;
-
-  /* Display the element as a flexbox container */
   display: flex;
-
-  /* Arrange child elements side-by-side horizontally */
   flex-direction: row;
-
-  /* Distribute child elements horizontally with space between them */
   justify-content: space-between;
-
-  /* Align child elements vertically in the center */
   align-items: center;
 }
 

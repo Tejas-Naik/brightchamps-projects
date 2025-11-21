@@ -1,7 +1,7 @@
 from datetime import datetime
 import time
 import pytz
-import winsound
+import os
 india = pytz.timezone('Asia/Kolkata')
 now = datetime.now(india)
 print(now)
@@ -30,6 +30,6 @@ while True:
             if(minute == minutenow):
                 if(seconds == secondsnow):
                     print("Wake Up!")
-                    # Play sound for 2 seconds
-                    winsound.Beep(1000, 2000)  # frequency = 1000Hz, duration = 2000ms
+                    # Play sound on Mac
+                    os.system('afplay /System/Library/Sounds/Alarm.aiff')
                     break

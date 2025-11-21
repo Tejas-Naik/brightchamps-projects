@@ -16,7 +16,7 @@ body {
   margin: 100px auto 0 auto;
 }
 
-/******************** header style************************************/
+/******************** header style ************************************/
 .header {
   padding: 10px;
   height: 120px;
@@ -104,9 +104,7 @@ textarea {
 }
 .form-control:focus {
   border-color: #80bdff;
-  /*remove the line drawn around */
   outline: 0;
-  /*apply one or more shadows to an element*/
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 

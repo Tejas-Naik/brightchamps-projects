@@ -203,11 +203,6 @@ small {
   transform: translateY(-10px);
 }
 
-.fa .fa-quote-left {
-  font-size: 34px;
-  color: #ff523b;
-}
-
 ion-icon {
   color: gold;
 }

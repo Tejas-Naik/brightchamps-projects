@@ -1,34 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lotus Temple - Incredible India Tourism</title>
   <link href="places.css" rel="stylesheet">
-  
-  </link>
-  
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Borel&family=Edu+SA+Beginner&family=Henny+Penny&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
   <div class="background"></div>
-  <h2 class="title">Lotus Temple</h2>
-  <header>
-   <ul type="none">
-      <li><a href="index.html">Home</a></li>
-      <li> <select onchange="window.location.href = this.value;">
-        <option>Places to visit</option>
-         <option value="tajmahal.html">Taj Mahal</option>
-         <option value="redfort.html">Red Fort</option>
-         <option value="lotustemple.html">Lotus Temple</option>
-         <option value="boathouse.html">Boat House</option>
-         <option value="statue.html">Statue of unity</option>
-         <option value="indiagate.html">India gate</option>
-      </select></li>
-      <li><a href="aboutme.html">About Me</a></li>
-     </ul>  
+  
+  <header class="modern-header">
+    <div class="header-container">
+      <div class="logo-section">
+        <img src="logo.png" alt="India Tourism Logo" class="logo">
+        <h1>Incredible India</h1>
+      </div>
+      <nav class="modern-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+          <li class="nav-item dropdown"> 
+            <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-map-marker-alt"></i> Destinations <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="tajmahal.html" class="dropdown-item"><i class="fas fa-crown"></i> Taj Mahal</a>
+              <a href="redfort.html" class="dropdown-item"><i class="fas fa-fort-awesome"></i> Red Fort</a>
+              <a href="lotustemple.html" class="dropdown-item"><i class="fas fa-leaf"></i> Lotus Temple</a>
+              <a href="boathouse.html" class="dropdown-item"><i class="fas fa-ship"></i> Kerala Backwaters</a>
+              <a href="statue.html" class="dropdown-item"><i class="fas fa-monument"></i> Statue of Unity</a>
+              <a href="indiagate.html" class="dropdown-item"><i class="fas fa-archway"></i> India Gate</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="aboutme.html" class="nav-link"><i class="fas fa-user"></i> About Me</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
   </header>
+
+  <main class="main-content">
+    <h2 class="title">Lotus Temple</h2>
  <div class="content"> 
      <p>The Lotus Temple, officially known as the Baháʼí House of Worship, is a masterpiece of modern architecture located in the heart of Delhi, India. Its unique design, spiritual significance, and role as a symbol of unity make it one of the most captivating landmarks in the country. The temple's lotus flower-inspired architecture, open to people of all faiths and backgrounds, reflects the principles of the Baháʼí Faith and stands as a testament to the power of architecture to inspire and unite.
   </p>
@@ -73,10 +92,61 @@ In conclusion, the Lotus Temple is much more than an architectural marvel; it is
       </div>
     </div>
   </section>
-  <div class="location">
-    <h4>Travel by clicking below</h4>
-     <a target="_blank" href="https://www.google.com/maps/search/lotus+temple/@19.4391438,66.5566359,5z/data=!3m1!4b1?authuser=0&entry=ttu"><img class="locationimage" src="lotus.png"></a>
-  </div>
+    <div class="location">
+      <h4>Travel by clicking below</h4>
+      <a target="_blank" href="https://www.google.com/maps/search/lotus+temple/@19.4391438,66.5566359,5z/data=!3m1!4b1?authuser=0&entry=ttu"><img class="locationimage" src="lotus.png" alt="Lotus Temple Location"></a>
+    </div>
+    
+    <div class="goback">
+      <a href="index.html"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </div>
+  </main>
+
+  <footer class="modern-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Incredible India</h3>
+          <p>Discover the magic of India's diverse culture, rich heritage, and breathtaking landscapes.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#explore">Destinations</a></li>
+            <li><a href="aboutme.html">About</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="tajmahal.html">Taj Mahal</a></li>
+            <li><a href="redfort.html">Red Fort</a></li>
+            <li><a href="lotustemple.html">Lotus Temple</a></li>
+            <li><a href="boathouse.html">Kerala Backwaters</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <p><i class="fas fa-envelope"></i> info@incredibleindia.com</p>
+          <p><i class="fas fa-phone"></i> +91 123 456 7890</p>
+          <p><i class="fas fa-map-marker-alt"></i> New Delhi, India</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Incredible India Tourism. All rights reserved. | Blog by MPS</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
 

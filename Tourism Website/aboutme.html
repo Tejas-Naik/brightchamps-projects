@@ -1,29 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-     <link href="aboutme.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Borel&family=Edu+SA+Beginner&family=Henny+Penny&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Incredible India Tourism</title>
+    <link href="aboutme.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
-    <header>
-      <img src="https://media.istockphoto.com/id/1057822270/vector/woman-portrait.jpg?s=170667a&w=0&k=20&c=H788q3nktJi54bLQNum4TNs7p80DPsh5_R6Eyqr85Ws=">
-      <h1>Hi, I'm MPS</h1>
+    <header class="modern-header">
+      <div class="header-container">
+        <div class="logo-section">
+          <img src="logo.png" alt="India Tourism Logo" class="logo">
+          <h1>Incredible India</h1>
+        </div>
+        <nav class="modern-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+            <li class="nav-item dropdown"> 
+              <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-map-marker-alt"></i> Destinations <i class="fas fa-chevron-down"></i></a>
+              <div class="dropdown-menu">
+                <a href="tajmahal.html" class="dropdown-item"><i class="fas fa-crown"></i> Taj Mahal</a>
+                <a href="redfort.html" class="dropdown-item"><i class="fas fa-fort-awesome"></i> Red Fort</a>
+                <a href="lotustemple.html" class="dropdown-item"><i class="fas fa-leaf"></i> Lotus Temple</a>
+                <a href="boathouse.html" class="dropdown-item"><i class="fas fa-ship"></i> Kerala Backwaters</a>
+                <a href="statue.html" class="dropdown-item"><i class="fas fa-monument"></i> Statue of Unity</a>
+                <a href="indiagate.html" class="dropdown-item"><i class="fas fa-archway"></i> India Gate</a>
+              </div>
+            </li>
+            <li class="nav-item active"><a href="aboutme.html" class="nav-link"><i class="fas fa-user"></i> About Me</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </header>
-     <section id="decoration">
-        <div class="circle1"></div>
-        <div class="circle2"></div>
-        <div class="circle3"></div>
-        <div class="circle4"></div>
-        <div class="circle5"></div>
-     </section>
-    <div class="typing-container">
-    <span id="text"></span><span id="cursor">|</span>
-  </div>
-    <div id="signature">
-        <img src="sign.png">
-     <div class="goback"><a href="index.html">Home</a></div>
-     <script src="script.js"></script>
+
+    <main class="about-main">
+      <section class="hero-about">
+        <div class="container">
+          <div class="hero-content">
+            <div class="profile-section">
+              <div class="profile-image">
+                <img src="https://media.istockphoto.com/id/1057822270/vector/woman-portrait.jpg?s=170667a&w=0&k=20&c=H788q3nktJi54bLQNum4TNs7p80DPsh5_R6Eyqr85Ws=" alt="MPS Profile">
+                <div class="profile-badge">
+                  <i class="fas fa-award"></i>
+                </div>
+              </div>
+              <h1 class="profile-name">Hi, I'm MPS</h1>
+              <p class="profile-title">Travel Enthusiast & India Explorer</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-content">
+        <div class="container">
+          <div class="content-grid">
+            <div class="text-content">
+              <div class="typing-container">
+                <span id="text"></span><span id="cursor">|</span>
+              </div>
+            </div>
+            <div class="visual-content">
+              <div class="floating-elements">
+                <div class="floating-icon"><i class="fas fa-mountain"></i></div>
+                <div class="floating-icon"><i class="fas fa-temple-hindu"></i></div>
+                <div class="floating-icon"><i class="fas fa-elephant"></i></div>
+                <div class="floating-icon"><i class="fas fa-om"></i></div>
+                <div class="floating-icon"><i class="fas fa-palace"></i></div>
+                <div class="floating-icon"><i class="fas fa-leaf"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="signature-section">
+        <div class="container">
+          <div class="signature-content">
+            <img src="sign.png" alt="Signature" class="signature-image">
+            <div class="signature-text">
+              <h3>MPS</h3>
+              <p>Creator of Incredible India Tourism</p>
+            </div>
+          </div>
+          <div class="back-button">
+            <a href="index.html" class="btn btn-primary">
+              <i class="fas fa-home"></i> Back to Home
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="modern-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Incredible India</h3>
+            <p>Discover the magic of India's diverse culture, rich heritage, and breathtaking landscapes.</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html#explore">Destinations</a></li>
+              <li><a href="aboutme.html">About</a></li>
+              <li><a href="index.html#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Destinations</h4>
+            <ul>
+              <li><a href="tajmahal.html">Taj Mahal</a></li>
+              <li><a href="redfort.html">Red Fort</a></li>
+              <li><a href="lotustemple.html">Lotus Temple</a></li>
+              <li><a href="boathouse.html">Kerala Backwaters</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <p><i class="fas fa-envelope"></i> info@incredibleindia.com</p>
+            <p><i class="fas fa-phone"></i> +91 123 456 7890</p>
+            <p><i class="fas fa-map-marker-alt"></i> New Delhi, India</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Incredible India Tourism. All rights reserved. | Blog by MPS</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

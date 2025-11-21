@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("to-do-list.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.todo-container {
+  text-align: center;
+}
+h1 {
+  margin-bottom: 20px;
+}
+.add-task input[type="text"],
+.add-task input[type="datetime-local"] {
+  padding: 5px;
+  margin-right: 5px;
+}
+.add-task button {
+  padding: 5px 10px;
+}
+.filter-tasks {
+  margin-top: 10px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  color: #5e3131;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.task-actions button {
+  margin-left: 10px;
+}

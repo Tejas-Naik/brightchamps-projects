@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>chat-interface</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="app">
+      <aside class="sidebar-servers">
+        <div class="server server-home" data-server="home" title="Home">
+          <i class="fas fa-discord"></i>
+        </div>
+        <div class="separator"></div>
+        <div class="server" data-server="server-1" title="Server 1">
+          <img src="user-png.png" alt="S1" />
+        </div>
+        <div class="server" data-server="server-2" title="Server 2">
+          <span>S2</span>
+        </div>
+        <button class="server add" title="Add Server">
+          <i class="fas fa-plus"></i>
+        </button>
+      </aside>
+
+      <aside class="sidebar-channels">
+        <div class="channels-header">
+          <div class="guild-name">Server 1</div>
+          <button class="new-dm" title="New DM">
+            <i class="fas fa-user-plus"></i>
+          </button>
+        </div>
+        <div class="channel-section">
+          <div class="section-title">TEXT CHANNELS</div>
+          <ul class="channel-list" id="channel-list">
+            <li class="channel active" data-channel="#general">
+              <i class="fas fa-hashtag"></i><span>general</span>
+            </li>
+            <li class="channel" data-channel="#random">
+              <i class="fas fa-hashtag"></i><span>random</span>
+            </li>
+            <li class="channel" data-channel="#help">
+              <i class="fas fa-hashtag"></i><span>help</span>
+            </li>
+          </ul>
+        </div>
+        <div class="user-bar">
+          <div class="user-info">
+            <img src="user-png.png" alt="me" />
+            <div class="meta">
+              <div class="name">You</div>
+              <div class="status">Online</div>
+            </div>
+          </div>
+          <div class="user-actions">
+            <button title="Mute"><i class="fas fa-microphone"></i></button>
+            <button title="Deafen"><i class="fas fa-headphones"></i></button>
+            <button title="Settings"><i class="fas fa-cog"></i></button>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="chat-header">
+          <div class="left">
+            <i class="fas fa-hashtag"></i>
+            <span class="chat-header-title">general</span>
+          </div>
+          <div class="right">
+            <div class="search">
+              <input type="text" placeholder="Search" id="search-input" />
+              <i class="fas fa-search"></i>
+            </div>
+            <button title="Inbox"><i class="far fa-bell"></i></button>
+            <button title="Help"><i class="far fa-question-circle"></i></button>
+          </div>
+        </header>
+
+        <section class="chat-scroll" id="chat-scroll">
+          <!-- Messages injected here -->
+        </section>
+
+        <footer class="chat-input-area">
+          <button class="attach" title="Upload">
+            <i class="fas fa-plus"></i>
+          </button>
+          <form class="chat-input-form" id="chat-form">
+            <input
+              type="text"
+              class="chat-input"
+              id="chat-input"
+              required
+              placeholder="Message #general"
+            />
+          </form>
+          <div class="input-actions">
+            <button title="Gift"><i class="far fa-gift"></i></button>
+            <button title="GIF"><i class="far fa-file-video"></i></button>
+            <button title="Sticker"><i class="far fa-sticky-note"></i></button>
+            <button title="Emoji"><i class="far fa-smile"></i></button>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>

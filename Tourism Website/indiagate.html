@@ -1,90 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>India Gate - Incredible India Tourism</title>
   <link href="places.css" rel="stylesheet">
-  
-  </link>
-  
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Borel&family=Edu+SA+Beginner&family=Henny+Penny&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
   <div class="background"></div>
-  <h2 class="title">India Gate</h2>
-    <header>
-   <ul type="none">
-      <li><a href="index.html">Home</a></li>
-      <li> <select onchange="window.location.href = this.value;">
-        <option>Places to visit</option>
-         <option value="tajmahal.html">Taj Mahal</option>
-         <option value="redfort.html">Red Fort</option>
-         <option value="lotustemple.html">Lotus Temple</option>
-         <option value="boathouse.html">Boat House</option>
-         <option value="statue.html">Statue of unity</option>
-         <option value="indiagate.html">India gate</option>
-      </select></li>
-      <li><a href="aboutme.html">About Me</a></li>
-     </ul>  
+  
+  <header class="modern-header">
+    <div class="header-container">
+      <div class="logo-section">
+        <img src="logo.png" alt="India Tourism Logo" class="logo">
+        <h1>Incredible India</h1>
+      </div>
+      <nav class="modern-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+          <li class="nav-item dropdown"> 
+            <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-map-marker-alt"></i> Destinations <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="tajmahal.html" class="dropdown-item"><i class="fas fa-crown"></i> Taj Mahal</a>
+              <a href="redfort.html" class="dropdown-item"><i class="fas fa-fort-awesome"></i> Red Fort</a>
+              <a href="lotustemple.html" class="dropdown-item"><i class="fas fa-leaf"></i> Lotus Temple</a>
+              <a href="boathouse.html" class="dropdown-item"><i class="fas fa-ship"></i> Kerala Backwaters</a>
+              <a href="statue.html" class="dropdown-item"><i class="fas fa-monument"></i> Statue of Unity</a>
+              <a href="indiagate.html" class="dropdown-item"><i class="fas fa-archway"></i> India Gate</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="aboutme.html" class="nav-link"><i class="fas fa-user"></i> About Me</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
   </header>
- <div class="content"> 
-     <p>India Gate, standing tall and resplendent in the heart of New Delhi, is much more than an architectural marvel; it is a symbol of India's rich history, unwavering patriotism, and the sacrifices of countless heroes. This iconic monument serves as a poignant reminder of the nation's struggles, resilience, and the indomitable spirit of its people. 
-  </p>
-   <p>
-Completed in 1931, India Gate was constructed in memory of the soldiers who laid down their lives during World War I. Originally known as the All India War Memorial, it commemorates the soldiers of the British Indian Army who fought in various conflicts during the British colonial period. The names of over 13,000 soldiers are inscribed on the walls of the monument, a solemn tribute to their ultimate sacrifice.
-  </p>
-   <p>
-India Gate is not merely a structure of stone and mortar; it is a living testament to the valor, sacrifice, and patriotism that define the Indian identity. Its architectural splendor, historical context, and the emotions it evokes in the hearts of millions make it a symbol of national pride. As India continues to progress and evolve, India Gate stands as a constant reminder of the sacrifices that have shaped the nation and the values that continue to guide it toward a brighter future. </p>
+
+  <main class="main-content">
+    <h2 class="title">India Gate</h2>
     
+    <div class="content"> 
+      <p>India Gate, standing tall and resplendent in the heart of New Delhi, is much more than an architectural marvel; it is a symbol of India's rich history, unwavering patriotism, and the sacrifices of countless heroes. This iconic monument serves as a poignant reminder of the nation's struggles, resilience, and the indomitable spirit of its people.</p>
+      <p>Completed in 1931, India Gate was constructed in memory of the soldiers who laid down their lives during World War I. Originally known as the All India War Memorial, it commemorates the soldiers of the British Indian Army who fought in various conflicts during the British colonial period. The names of over 13,000 soldiers are inscribed on the walls of the monument, a solemn tribute to their ultimate sacrifice.</p>
+      <p>India Gate is not merely a structure of stone and mortar; it is a living testament to the valor, sacrifice, and patriotism that define the Indian identity. Its architectural splendor, historical context, and the emotions it evokes in the hearts of millions make it a symbol of national pride. As India continues to progress and evolve, India Gate stands as a constant reminder of the sacrifices that have shaped the nation and the values that continue to guide it toward a brighter future.</p>
     </div>
 
-  
-   <div class="container">
-        <div class="moving-image-container">
-            <img src="https://indiacsr.in/wp-content/uploads/2022/07/India-Gate.jpg" alt="Image 1" class="moving-image">
-            <img src="https://cdn.siasat.com/wp-content/uploads/2022/09/2022_9img08_Sep_2022_PTI09_08_2022_000342B-scaled.jpg" alt="Image 2" class="moving-image">
-            <img src="https://sofitel.accor.com/destinations/imagerie/india-gate-304x253.jpg" alt="Image 3" class="moving-image">
-           <img src="https://media.istockphoto.com/id/1424840114/photo/most-visited-india-gate-at-rajpath-or-kartavya-path-of-renovated-of-central-vista-avenue.jpg?s=612x612&w=0&k=20&c=kQxq803MIb6qJyaziwKkqp3MwAohMEvCMYgkR4aQ9_w=" alt="Image 1" class="moving-image">
-            <img src="https://static.toiimg.com/thumb/33827329.cms?resizemode=75&width=1200&height=900" alt="Image 2" class="moving-image">
-            <img src="https://1.bp.blogspot.com/-pLQB-mPyNHg/XwHcB3pGHuI/AAAAAAAAh-U/X9ymf7fvs24zNxGMf7BDHnJbUw_ByIQEwCK4BGAsYHg/s1008/1024px-IndiaGateAtNight.jpg" alt="Image 3" class="moving-image">
-            <!-- Add more images here -->
-        </div>
+    <div class="container">
+      <div class="moving-image-container">
+        <img src="https://indiacsr.in/wp-content/uploads/2022/07/India-Gate.jpg" alt="India Gate 1" class="moving-image">
+        <img src="https://cdn.siasat.com/wp-content/uploads/2022/09/2022_9img08_Sep_2022_PTI09_08_2022_000342B-scaled.jpg" alt="India Gate 2" class="moving-image">
+        <img src="https://sofitel.accor.com/destinations/imagerie/india-gate-304x253.jpg" alt="India Gate 3" class="moving-image">
+        <img src="https://media.istockphoto.com/id/1424840114/photo/most-visited-india-gate-at-rajpath-or-kartavya-path-of-renovated-of-central-vista-avenue.jpg?s=612x612&w=0&k=20&c=kQxq803MIb6qJyaziwKkqp3MwAohMEvCMYgkR4aQ9_w=" alt="India Gate Rajpath" class="moving-image">
+        <img src="https://static.toiimg.com/thumb/33827329.cms?resizemode=75&width=1200&height=900" alt="India Gate Night" class="moving-image">
+        <img src="https://1.bp.blogspot.com/-pLQB-mPyNHg/XwHcB3pGHuI/AAAAAAAAh-U/X9ymf7fvs24zNxGMf7BDHnJbUw_ByIQEwCK4BGAsYHg/s1008/1024px-IndiaGateAtNight.jpg" alt="India Gate Illuminated" class="moving-image">
+      </div>
     </div>
 
-
-<section class="others">
-         <div class="letters">F</div>
-          <div class="cir"><h4>Kathi</br>Rolls</h4><img src="https://frommybowl.com/wp-content/uploads/2020/12/chana-kathi-rolls-landscape.jpg"></div>
-           <div class="cir"><h4>Uttapams</h4><img src="https://www.cookingcarnival.com/wp-content/uploads/2022/02/Uttapam-recipe.jpg"></div>
-           <div class="cir"><h4>Pakoras</h4><img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/02/vegetable-pakora-recipe.jpg"></div>
+    <section class="others">
+      <div class="letters">F</div>
+      <div class="cir"><h4>Kathi<br>Rolls</h4><img src="https://frommybowl.com/wp-content/uploads/2020/12/chana-kathi-rolls-landscape.jpg" alt="Kathi Rolls"></div>
+      <div class="cir"><h4>Uttapams</h4><img src="https://www.cookingcarnival.com/wp-content/uploads/2022/02/Uttapam-recipe.jpg" alt="Uttapams"></div>
+      <div class="cir"><h4>Pakoras</h4><img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/02/vegetable-pakora-recipe.jpg" alt="Pakoras"></div>
       <div class="letters">D</div>
-   </section>
+    </section>
 
+    <section class="hotels">
+      <h4>Where can I stay?</h4>
+      <div>
+        <div><a href="https://www.booking.com/hotel/in/the-oberoi-new-delhi.en-gb.html?aid=314920&label=india-gate1-nUmrVA2TJagqQwHZQ1IetwS151876808056%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-2588488936%3Alp9062032%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZnKoGAh3tLoA_MNQwn0RI8&sid=9f6bc4e36a00b4acbfae4d1080c8845e">The Oberoi</a></div>
+        <div><a href="https://www.booking.com/hotel/in/imperial-new-delhi.en-gb.html?aid=314920&label=india-gate1-nUmrVA2TJagqQwHZQ1IetwS151876808056%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-2588488936%3Alp9062032%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZnKoGAh3tLoA_MNQwn0RI8&sid=9f6bc4e36a00b4acbfae4d1080c8845e">The Imperial</a></div>
+        <div><a href="https://www.booking.com/hotel/in/shangri-la-new-delhi.en-gb.html?aid=314920&label=india-gate1-nUmrVA2TJagqQwHZQ1IetwS151876808056%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-2588488936%3Alp9062032%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZnKoGAh3tLoA_MNQwn0RI8&sid=9f6bc4e36a00b4acbfae4d1080c8845e">Shangri-La Eros New Delhi</a></div>
+      </div>
+    </section>
 
-   <section class="hotels">
-    <h4>Where can I stay?</h4>
-    <div>
-      <div><a href="https://www.booking.com/hotel/in/the-oberoi-new-delhi.en-gb.html?aid=314920&label=india-gate1-nUmrVA2TJagqQwHZQ1IetwS151876808056%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-2588488936%3Alp9062032%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZnKoGAh3tLoA_MNQwn0RI8&sid=9f6bc4e36a00b4acbfae4d1080c8845e">
-       The Oberoi </a>
+    <div class="location">
+      <h4>Travel by clicking below</h4>
+      <a target="_blank" href="https://goo.gl/maps/1FP5yKcWYQGj3jVw7"><img class="locationimage" src="india gate.png" alt="India Gate Location"></a>
+    </div>
+    
+    <div class="goback">
+      <a href="index.html"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </div>
+  </main>
+
+  <footer class="modern-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Incredible India</h3>
+          <p>Discover the magic of India's diverse culture, rich heritage, and breathtaking landscapes.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#explore">Destinations</a></li>
+            <li><a href="aboutme.html">About</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="tajmahal.html">Taj Mahal</a></li>
+            <li><a href="redfort.html">Red Fort</a></li>
+            <li><a href="lotustemple.html">Lotus Temple</a></li>
+            <li><a href="boathouse.html">Kerala Backwaters</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <p><i class="fas fa-envelope"></i> info@incredibleindia.com</p>
+          <p><i class="fas fa-phone"></i> +91 123 456 7890</p>
+          <p><i class="fas fa-map-marker-alt"></i> New Delhi, India</p>
+        </div>
       </div>
-      <div><a href="https://www.booking.com/hotel/in/imperial-new-delhi.en-gb.html?aid=314920&label=india-gate1-nUmrVA2TJagqQwHZQ1IetwS151876808056%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-2588488936%3Alp9062032%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZnKoGAh3tLoA_MNQwn0RI8&sid=9f6bc4e36a00b4acbfae4d1080c8845e">
-     The Imperial </a>
-      </div>
-      <div><a href="https://www.booking.com/hotel/in/shangri-la-new-delhi.en-gb.html?aid=314920&label=india-gate1-nUmrVA2TJagqQwHZQ1IetwS151876808056%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-2588488936%3Alp9062032%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZnKoGAh3tLoA_MNQwn0RI8&sid=9f6bc4e36a00b4acbfae4d1080c8845e">
-     Shangri-La Eros New Delhi  </a>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Incredible India Tourism. All rights reserved. | Blog by MPS</p>
       </div>
     </div>
-  </section>
+  </footer>
 
-
-  
-  <div class="location">
-    <h4>Travel by clicking below</h4>
-     <a target="_blank" href="https://goo.gl/maps/1FP5yKcWYQGj3jVw7"><img class="locationimage" src="india gate.png"></a>
-  </div>
-  
+  <script src="script.js"></script>
 </body>
 
 </html>

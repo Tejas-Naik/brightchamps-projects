@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lyrics Finder</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <i class="fas fa-music"></i>
+        <h1>LyricsFinder</h1>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+      <!-- Search Section -->
+      <section class="search-section">
+        <div class="search-card">
+          <h2>Find Your Song</h2>
+          <p>Search for lyrics from your favorite artists</p>
+          
+          <form class="search-form">
+            <div class="input-group">
+              <div class="input-wrapper">
+                <i class="fas fa-music"></i>
+                <input type="text" id="song" class="song" placeholder="Enter song name" required>
+              </div>
+              <div class="input-wrapper">
+                <i class="fas fa-user"></i>
+                <input type="text" id="artist" class="artist" placeholder="Enter artist name" required>
+              </div>
+            </div>
+            <button type="submit" class="search-btn">
+              <i class="fas fa-search"></i>
+              Search Lyrics
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Lyrics Display -->
+      <section class="lyrics-section" id="lyrics-section">
+        <div class="lyrics-card">
+          <div class="lyrics-header">
+            <h3 id="song-info">Song Lyrics</h3>
+            <button class="close-btn" id="close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <div class="lyrics-content">
+            <pre class="lyrics" id="lyrics-text"></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- Charts Section -->
+      <section class="charts-section">
+        <div class="chart-card">
+          <h3><i class="fas fa-fire"></i> Trending</h3>
+          <ul class="chart-list most-searched-list"></ul>
+        </div>
+        <div class="chart-card">
+          <h3><i class="fas fa-star"></i> New Releases</h3>
+          <ul class="chart-list newly-added-list"></ul>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,88 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statue of Unity - Incredible India Tourism</title>
   <link href="places.css" rel="stylesheet">
-  </link>
- 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Borel&family=Edu+SA+Beginner&family=Henny+Penny&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
   <div class="background"></div>
-  <h2 class="title">Statue of Unity</h2>
-  <header>
-   <ul type="none">
-      <li><a href="index.html">Home</a></li>
-      <li> <select onchange="window.location.href = this.value;">
-        <option>Places to visit</option>
-         <option value="tajmahal.html">Taj Mahal</option>
-         <option value="redfort.html">Red Fort</option>
-         <option value="lotustemple.html">Lotus Temple</option>
-         <option value="boathouse.html">Boat House</option>
-         <option value="statue.html">Statue of unity</option>
-         <option value="indiagate.html">India gate</option>
-      </select></li>
-      <li><a href="aboutme.html">About Me</a></li>
-     </ul>  
+  
+  <header class="modern-header">
+    <div class="header-container">
+      <div class="logo-section">
+        <img src="logo.png" alt="India Tourism Logo" class="logo">
+        <h1>Incredible India</h1>
+      </div>
+      <nav class="modern-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+          <li class="nav-item dropdown"> 
+            <a href="#" class="nav-link dropdown-toggle"><i class="fas fa-map-marker-alt"></i> Destinations <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="tajmahal.html" class="dropdown-item"><i class="fas fa-crown"></i> Taj Mahal</a>
+              <a href="redfort.html" class="dropdown-item"><i class="fas fa-fort-awesome"></i> Red Fort</a>
+              <a href="lotustemple.html" class="dropdown-item"><i class="fas fa-leaf"></i> Lotus Temple</a>
+              <a href="boathouse.html" class="dropdown-item"><i class="fas fa-ship"></i> Kerala Backwaters</a>
+              <a href="statue.html" class="dropdown-item"><i class="fas fa-monument"></i> Statue of Unity</a>
+              <a href="indiagate.html" class="dropdown-item"><i class="fas fa-archway"></i> India Gate</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="aboutme.html" class="nav-link"><i class="fas fa-user"></i> About Me</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
   </header>
- <div class="content"> 
-     <p>he Statue of Unity, standing tall and majestic on the banks of the Narmada River in the Indian state of Gujarat, is a remarkable testament to India's rich history, visionary leadership, and national unity. This colossal statue, dedicated to Sardar Vallabhbhai Patel, pays homage to his pivotal role in unifying a diverse nation and shaping its destiny.
-  </p>
-   <p>
-The Statue of Unity commemorates Sardar Vallabhbhai Patel, often referred to as the "Iron Man of India." As the first Deputy Prime Minister and Minister of Home Affairs of independent India, Patel played a crucial role in integrating over 500 princely states into the newly formed nation. His tireless efforts helped forge a united India from the diverse ethnic, linguistic, and cultural landscapes that existed at the time of independence.
-  </p>
-   <p>The Statue of Unity has not only become a symbol of national pride but also a catalyst for local and national development. It has attracted millions of tourists from across the country and the world, bolstering Gujarat's tourism industry.</p>
-   <p>
-The Statue of Unity stands as a towering testament to India's historical legacy, unity, and leadership. It embodies the spirit of Sardar Vallabhbhai Patel and his vision for a united and strong India </p>
+
+  <main class="main-content">
+    <h2 class="title">Statue of Unity</h2>
     
+    <div class="content"> 
+      <p>The Statue of Unity, standing tall and majestic on the banks of the Narmada River in the Indian state of Gujarat, is a remarkable testament to India's rich history, visionary leadership, and national unity. This colossal statue, dedicated to Sardar Vallabhbhai Patel, pays homage to his pivotal role in unifying a diverse nation and shaping its destiny.</p>
+      <p>The Statue of Unity commemorates Sardar Vallabhbhai Patel, often referred to as the "Iron Man of India." As the first Deputy Prime Minister and Minister of Home Affairs of independent India, Patel played a crucial role in integrating over 500 princely states into the newly formed nation. His tireless efforts helped forge a united India from the diverse ethnic, linguistic, and cultural landscapes that existed at the time of independence.</p>
+      <p>The Statue of Unity has not only become a symbol of national pride but also a catalyst for local and national development. It has attracted millions of tourists from across the country and the world, bolstering Gujarat's tourism industry.</p>
+      <p>The Statue of Unity stands as a towering testament to India's historical legacy, unity, and leadership. It embodies the spirit of Sardar Vallabhbhai Patel and his vision for a united and strong India.</p>
     </div>
 
-  
-   <div class="container">
-        <div class="moving-image-container">
-            <img src="https://images.livemint.com/rf/Image-621x414/LiveMint/Period2/2018/11/02/Photos/Processed/statue_of_unity_sardar_patel-U205730969126CB--621x414@LiveMint.jpg" alt="Image 1" class="moving-image">
-            <img src="https://images.news18.com/ibnlive/uploads/2019/10/national-unity-day-2022-16671870454x3.jpg" alt="Image 2" class="moving-image">
-            <img src="https://www.deccanherald.com/sites/dh/files/article_images/2020/01/15/file72kca7re047ujfvc2do-1579056602.jpg" alt="Image 3" class="moving-image">
-           <img src="https://www.michaelgraves.com/wp-content/uploads/2016/04/sou-update_02.jpg" alt="Image 1" class="moving-image">
-            <img src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2013/10/31/1383234856303/Statue-of-Unity-planned-i-009.jpg?width=465&dpr=1&s=none" alt="Image 2" class="moving-image">
-            <img src="https://statueofunitytentcity.com/wp-content/uploads/2023/05/ahm-fea.jpg" alt="Image 3" class="moving-image">
-          
-        </div>
+    <div class="container">
+      <div class="moving-image-container">
+        <img src="https://images.livemint.com/rf/Image-621x414/LiveMint/Period2/2018/11/02/Photos/Processed/statue_of_unity_sardar_patel-U205730969126CB--621x414@LiveMint.jpg" alt="Statue of Unity 1" class="moving-image">
+        <img src="https://images.news18.com/ibnlive/uploads/2019/10/national-unity-day-2022-16671870454x3.jpg" alt="Statue of Unity 2" class="moving-image">
+        <img src="https://www.deccanherald.com/sites/dh/files/article_images/2020/01/15/file72kca7re047ujfvc2do-1579056602.jpg" alt="Statue of Unity 3" class="moving-image">
+        <img src="https://www.michaelgraves.com/wp-content/uploads/2016/04/sou-update_02.jpg" alt="Statue of Unity Construction" class="moving-image">
+        <img src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2013/10/31/1383234856303/Statue-of-Unity-planned-i-009.jpg?width=465&dpr=1&s=none" alt="Statue of Unity Design" class="moving-image">
+        <img src="https://statueofunitytentcity.com/wp-content/uploads/2023/05/ahm-fea.jpg" alt="Statue of Unity Complex" class="moving-image">
+      </div>
     </div>
 
-<section class="others">
-         <div class="letters">F</div>
-          <div class="cir"><h4>Gujrati</br>Thali</h4><img src="https://curlytales.com/wp-content/uploads/2019/10/images-4-6-e1570704718593.jpg"></div>
-           <div class="cir"><h4>Khandvi</h4><img src="https://images.aws.nestle.recipes/original/ff75422b53f60e10642b1df6e54f943d_Khandvi_with_sprouts_filling_Plating.jpg"></div>
-           <div class="cir"><h4>Undhiyu</h4><img src="https://media.vogue.in/wp-content/uploads/2020/12/oondhiya.jpg"></div>
+    <section class="others">
+      <div class="letters">F</div>
+      <div class="cir"><h4>Gujrati<br>Thali</h4><img src="https://curlytales.com/wp-content/uploads/2019/10/images-4-6-e1570704718593.jpg" alt="Gujrati Thali"></div>
+      <div class="cir"><h4>Khandvi</h4><img src="https://images.aws.nestle.recipes/original/ff75422b53f60e10642b1df6e54f943d_Khandvi_with_sprouts_filling_Plating.jpg" alt="Khandvi"></div>
+      <div class="cir"><h4>Undhiyu</h4><img src="https://media.vogue.in/wp-content/uploads/2020/12/oondhiya.jpg" alt="Undhiyu"></div>
       <div class="letters">D</div>
-   </section>
+    </section>
 
+    <section class="hotels">
+      <h4>Where can I stay?</h4>
+      <div>
+        <div><a href="https://www.booking.com/hotel/in/sai-inn-rajpipla1.en-gb.html?aid=314920&label=statue-of-unity-tIxzSq5IpXa7OrVicRIZvQS589213119980%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-557440018051%3Alp9062032%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZnKoGAh3tLoA_MNQwn0RI8&sid=9f6bc4e36a00b4acbfae4d1080c8845e">Hotel Sai Inn</a></div>
+        <div><a href="https://www.booking.com/hotel/in/ramada-encore-by-wyndham-statue-of-unity.en-gb.html?aid=314920&label=statue-of-unity-tIxzSq5IpXa7OrVicRIZvQS589213119980%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-557440018051%3Alp9062032%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZnKoGAh3tLoA_MNQwn0RI8&sid=9f6bc4e36a00b4acbfae4d1080c8845e">Ramada Encore</a></div>
+        <div><a href="https://www.booking.com/hotel/in/tent-city-narmada-narmada.en-gb.html?aid=314920&label=statue-of-unity-tIxzSq5IpXa7OrVicRIZvQS589213119980%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-557440018051%3Alp9062032%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZnKoGAh3tLoA_MNQwn0RI8&sid=9f6bc4e36a00b4acbfae4d1080c8845e">Tent City Narmada</a></div>
+      </div>
+    </section>
 
-  <section class="hotels">
-    <h4>Where can I stay?</h4>
-    <div>
-      <div><a href="https://www.booking.com/hotel/in/sai-inn-rajpipla1.en-gb.html?aid=314920&label=statue-of-unity-tIxzSq5IpXa7OrVicRIZvQS589213119980%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-557440018051%3Alp9062032%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZnKoGAh3tLoA_MNQwn0RI8&sid=9f6bc4e36a00b4acbfae4d1080c8845e">
-       Hotel Sai Inn</a>
+    <div class="location">
+      <h4>Travel by clicking below</h4>
+      <a target="_blank" href="https://goo.gl/maps/ds6FhDGrmv2wrRwf6"><img class="locationimage" src="statue.png" alt="Statue of Unity Location"></a>
+    </div>
+    
+    <div class="goback">
+      <a href="index.html"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </div>
+  </main>
+
+  <footer class="modern-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Incredible India</h3>
+          <p>Discover the magic of India's diverse culture, rich heritage, and breathtaking landscapes.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#explore">Destinations</a></li>
+            <li><a href="aboutme.html">About</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="tajmahal.html">Taj Mahal</a></li>
+            <li><a href="redfort.html">Red Fort</a></li>
+            <li><a href="lotustemple.html">Lotus Temple</a></li>
+            <li><a href="boathouse.html">Kerala Backwaters</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <p><i class="fas fa-envelope"></i> info@incredibleindia.com</p>
+          <p><i class="fas fa-phone"></i> +91 123 456 7890</p>
+          <p><i class="fas fa-map-marker-alt"></i> New Delhi, India</p>
+        </div>
       </div>
-      <div><a href="https://www.booking.com/hotel/in/ramada-encore-by-wyndham-statue-of-unity.en-gb.html?aid=314920&label=statue-of-unity-tIxzSq5IpXa7OrVicRIZvQS589213119980%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-557440018051%3Alp9062032%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZnKoGAh3tLoA_MNQwn0RI8&sid=9f6bc4e36a00b4acbfae4d1080c8845e">
-     Ramada Encore  </a>
-      </div>
-      <div><a href="https://www.booking.com/hotel/in/tent-city-narmada-narmada.en-gb.html?aid=314920&label=statue-of-unity-tIxzSq5IpXa7OrVicRIZvQS589213119980%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-557440018051%3Alp9062032%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZnKoGAh3tLoA_MNQwn0RI8&sid=9f6bc4e36a00b4acbfae4d1080c8845e">
-      Tent City Narmada </a>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Incredible India Tourism. All rights reserved. | Blog by MPS</p>
       </div>
     </div>
-  </section>
+  </footer>
 
-  
-  <div class="location">
-    <h4>Travel by clicking below</h4>
-     <a target="_blank" href="https://goo.gl/maps/ds6FhDGrmv2wrRwf6"><img class="locationimage" src="statue.png"></a>
-  </div>
-  
+  <script src="script.js"></script>
 </body>
 
 </html>

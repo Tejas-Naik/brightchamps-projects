@@ -1,7 +1,8 @@
 # Creating & Accessing from Dictionary
 dict_a = {
   'name': 'Champ',
-  'age': 16
+  'age': 16,
+  'city': "Riyadh"
 }
 
 print(dict_a['name']) # Output: Champ
