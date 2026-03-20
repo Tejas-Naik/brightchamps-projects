@@ -46,38 +46,6 @@
 # greet(word=name)
 # print(msg)
 
-
-
-### Functions for add, sub, mul, div:
-def addition(a, b):
-  print(f"\nThe result is: {a} + {b} = {a+b}")
-
-def subtraction(a, b):
-  print(f"\nThe result is: {a} - {b} = {a-b}")
-
-def multiply(a, b):
-  print(f"\nThe result is: {a} * {b} = {a*b}")
-
-def division(a, b):
-  print(f"\nThe result is: {a} / {b} = {a/b}")
-
-num1 = int(input("Enter the first number: "))
-op = input("Enter the operator (+, -, *, /): ")
-num2 = int(input("Enter the second number: "))
-
-# Call the function using conditionals
-if op == "+":
-  addition(num1, num2)
-elif op == "-":
-  subtraction(num1, num2)
-elif op == "*":
-  multiply(num1, num2)
-elif op == "/":
-  division(num1, num2)
-else:
-  print("Invalid Input given...")
-
-
 # ### WEATHER REPORTER:
 # def get_weather_report(temperature):
 #   if temperature < 22:
@@ -110,4 +78,33 @@ else:
 # print(f"\nThe word '{sentence}' contains {vowel_count} vowel(s).")
 
 
+
+### Functions for add, sub, mul, div:
+def addition(a, b):
+  print(f"\nThe result is: {a} + {b} = {a+b}")
+
+def subtraction(a, b):
+  print(f"\nThe result is: {a} - {b} = {a-b}")
+
+def multiply(a, b):
+  print(f"\nThe result is: {a} * {b} = {a*b}")
+
+def division(a, b):
+  print(f"\nThe result is: {a} / {b} = {a/b}")
+
+num1 = int(input("Enter the first number: "))
+op = input("Enter the operator (+, -, *, /): ")
+num2 = int(input("Enter the second number: "))
+
+# Call the function using conditionals
+if op == "+":
+  addition(num1, num2)
+elif op == "-":
+  subtraction(num1, num2)
+elif op == "*":
+  multiply(num1, num2)
+elif op == "/":
+  division(num1, num2)
+else:
+  print("Invalid Input given...")
 

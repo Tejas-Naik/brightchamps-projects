@@ -31,3 +31,4 @@ while chance > 0:
         print("Hint-It's a fruit ")
         if chance == 0:
             print("Sorry! Your number of chances are over. You loose.")
+            

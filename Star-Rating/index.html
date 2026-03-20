@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-pUA-Compatible" content="ie=edge" />
+    <title>Star Rating Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="product-display">
+        <img
+          src="product_image.jpeg"
+          alt="Product Image"
+          class="product-image"
+        />
+        <div class="product-info">
+          <h3>Product Name</h3>
+          <p class="product-price">$99.99</p>
+          <p class="product-stock">In Stock: 10</p>
+          <p class="product-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id
+            turpis vel orci tincidunt suscipit. Proin feugiat nulla vel euismod.
+            Nullam ac tortor sed urna luctus cursus. Donec in eleifend libero.
+            Nulla facilisi.
+          </p>
+        </div>
+      </div>
+      <div class="rating-box">
+        <header>How was your experience?</header>
+        <div class="rating-category">
+          <h3>Quality of Product</h3>
+          <div class="stars quality-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="rating-result">
+            Rating: <span class="quality-rating">0</span>
+          </div>
+          <textarea
+            class="comment-input quality-comment"
+            placeholder="Leave a comment"
+            required
+          ></textarea>
+          <button class="submit-comment quality-submit">Submit Comment</button>
+          <div class="comment quality-comment-display"></div>
+        </div>
+        <div class="rating-category">
+          <h3>Delivery Experience</h3>
+          <div class="stars delivery-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="rating-result">
+            Rating: <span class="delivery-rating">0</span>
+          </div>
+          <textarea
+            class="comment-input delivery-comment"
+            placeholder="Leave a comment"
+            required
+          ></textarea>
+          <button class="submit-comment delivery-submit">Submit Comment</button>
+          <div class="comment delivery-comment-display"></div>
+        </div>
+        <div class="rating-category">
+          <h3>Seller Service</h3>
+          <div class="stars service-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="rating-result">
+            Rating: <span class="service-rating">0</span>
+          </div>
+          <textarea
+            class="comment-input service-comment"
+            placeholder="Leave a comment"
+            required
+          ></textarea>
+          <button class="submit-comment service-submit">Submit Comment</button>
+          <div class="comment service-comment-display"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>

@@ -20,8 +20,13 @@ background2 = pygame.transform.scale(background1, (screen_width, screen_height))
 spaceship_img = pygame.image.load("spaceship.png").convert_alpha()
 spaceship_width, spaceship_height = spaceship_img.get_size()
 spaceship_scale = 0.15
-spaceship_img = pygame.transform.scale(spaceship_img, (int(spaceship_width * spaceship_scale), int(spaceship_height * spaceship_scale)))
-
+spaceship_img = pygame.transform.scale(
+    spaceship_img, 
+    (
+        int(spaceship_width * spaceship_scale), 
+        int(spaceship_height * spaceship_scale)
+    )
+)
 # Spaceship initial position at the top
 spaceship_x = screen_width // 2 - spaceship_width // 2
 spaceship_y = screen_height - 50
@@ -98,16 +103,30 @@ while game_running:
     if random.randint(0, 100) < 2:
         asteroid_x = random.randint(30, screen_width - 30)  # Swap the arguments here
         asteroid_scale = random.uniform(min_asteroid_scale, max_asteroid_scale)
-        asteroid = Asteroid(asteroid_x, -int(asteroid_height * asteroid_scale), asteroid_img, asteroid_scale)
+        asteroid = Asteroid(
+            asteroid_x, 
+            -int(asteroid_height * asteroid_scale), 
+            asteroid_img, 
+            asteroid_scale
+            )
         asteroids.append(asteroid)
 
     # Rectangles to represent the spaceship and the asteroids
-    spaceship_rect = pygame.Rect(spaceship_x, spaceship_y, spaceship_img.get_width(), spaceship_img.get_height())
+    spaceship_rect = pygame.Rect(
+        spaceship_x, 
+        spaceship_y, 
+        spaceship_img.get_width(), 
+        spaceship_img.get_height()
+        )
 
     # Move and draw the asteroids
     for asteroid in asteroids:
         asteroid.move(1)
-        asteroid_rect = pygame.Rect(asteroid.x, asteroid.y, asteroid.image.get_width(), asteroid.image.get_height())
+        asteroid_rect = pygame.Rect(
+            asteroid.x, 
+            asteroid.y, 
+            asteroid.image.get_width(), 
+            asteroid.image.get_height())
         asteroid.draw(window)
 
         # Check for collision with the spaceship using colliderect()

@@ -1,4 +1,4 @@
-### Multiplication Tables 
+# ## Multiplication Tables 
 # n = int(input("Enter any number: "))
 # for i in range(1, 11):
 #   print(f"{n} x {i} = {n*i}")
@@ -6,7 +6,7 @@
 
 
 
-### Number Triangle Pattern-1
+# ## Number Triangle Pattern-1
 # n = int(input("Enter number of rows: "))
 
 # for i in range(1, n + 1):

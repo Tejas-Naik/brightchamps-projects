@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f2f5;
+}
+
+.wrapper {
+  max-width: 850px;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 20px;
+}
+
+.product-display {
+  width: 45%;
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.product-info {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.product-info h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.product-price {
+  font-size: 22px;
+  font-weight: 500;
+  color: #ffbe33;
+}
+
+.product-stock {
+  font-size: 16px;
+  color: #4caf50;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.product-description {
+  font-size: 16px;
+  margin-top: 15px;
+  text-align: justify;
+  color: #666;
+  line-height: 1.6;
+}
+
+.rating-box {
+  position: relative;
+  width: 55%;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 15px;
+}
+
+.rating-box header {
+  font-size: 22px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.rating-box .stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.stars i.active {
+  color: #ffbe33;
+}
+
+.stars i {
+  color: #e6e6e6;
+  font-size: 35px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.stars i:hover {
+  transform: scale(1.1);
+  color: #ffdd87;
+}
+
+.comment-input-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.comment-input {
+  width: 100%;
+  min-height: 100px;
+  resize: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  margin-bottom: 15px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.comment-input:focus {
+  outline: none;
+  border-color: #ffbe33;
+  box-shadow: 0 0 5px rgba(255, 190, 51, 0.5);
+}
+
+.submit-comment {
+  align-self: flex-end;
+  background-color: #ffbe33;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.submit-comment:hover {
+  background-color: #ffac00;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .product-display {
+    width: 100%;
+  }
+
+  .rating-box {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .rating-box header {
+    font-size: 20px;
+  }
+
+  .stars i {
+    font-size: 30px;
+  }
+}

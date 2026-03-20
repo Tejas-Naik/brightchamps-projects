@@ -1,0 +1,61 @@
+/* style.css */
+/* Add your additional styles here */
+/* You can customize the appearance of the squares or any other elements */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  perspective: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 400px;
+  position: relative;
+}
+
+.square {
+  transition: transform 0.5s ease;
+  transform-origin: center;
+  background-color: #1d1d1d;
+  box-shadow: 0 0 2px #000;
+  height: 16px;
+  width: 16px;
+  margin: 2px;
+}
+
+.square:hover {
+  transform: scale(1.2);
+}
+
+input[type="color"] {
+  margin: 10px;
+}
+
+button {
+  margin: 10px;
+  padding: 5px 10px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.eraser {
+  cursor: none;
+}

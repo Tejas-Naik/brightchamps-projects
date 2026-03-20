@@ -41,14 +41,8 @@ print(smallest)
 # REPORT CARD GENERATOR PROGRAM
 
 print("### Welcome to Report Card Generator ###\n")
-
-# Subjects taught in school
 all_subjects = ["Math", "Science", "English", "History"]
-
-# Create an empty report card list to store all student records
 report_cards = []
-
-# Get the number of students
 num_students = int(input("Enter the number of students: "))
 
 # Collect student names and marks for each subject
@@ -102,3 +96,4 @@ for student in report_cards:
 
 print("\nKeep up the good work! Learning is a lifelong adventure!")
 print("Thanks for using the Report Card Generator!!")
+  

@@ -1,128 +1,82 @@
-// Function to generate the Musixmatch API URL
-function updateURL(songName = "", artistName = "") {
-  return `https://api.musixmatch.com/ws/1.1/matcher.lyrics.get?format=jsonp&callback=searchLyrics&q_track=${songName}&q_artist=${artistName}&apikey=f90cd35582c176dbcfd3ecebcc227390`;
+const searchForm = document.querySelector(".search-form");
+const songInput = document.querySelector(".song");
+const artistInput = document.querySelector(".artist");
+const lyricsSection = document.getElementById("lyrics-section");
+const closeBtn = document.getElementById("close-btn");
+const songInfo = document.getElementById("song-info");
+const lyricsText = document.getElementById("lyrics-text");
+
+// A helper function to fetch data from an API
+async function fetchFromAPI(url) {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Error fetching API data:", error);
+    return null;
+  }
 }
 
-// Get DOM elements
-const searchForm = document.querySelector('.search-form');
-const songInput = document.querySelector('.song');
-const artistInput = document.querySelector('.artist');
-const lyricsSection = document.getElementById('lyrics-section');
-const closeBtn = document.getElementById('close-btn');
-const songInfo = document.getElementById('song-info');
-const lyricsText = document.getElementById('lyrics-text');
-
-// Event listener for form submission
-searchForm.addEventListener('submit', function(e) {
+// Search for lyrics when the form is submitted
+searchForm.addEventListener("submit", async function (e) {
   e.preventDefault();
-  const songName = songInput.value.trim().replace(/ /g, "%20");
-  const artistName = artistInput.value.trim().replace(/ /g, "%20");
-  
+  const songName = songInput.value.trim();
+  const artistName = artistInput.value.trim();
+
   if (!songName || !artistName) {
-    alert('Please enter both song and artist name');
+    alert("Please enter both song and artist name");
     return;
   }
-  
-  const newURL = updateURL(songName, artistName);
-  
+
+  const searchUrl = `https://api.lyrics.ovh/v1/${encodeURIComponent(
+    artistName
+  )}/${encodeURIComponent(songName)}`;
+
   // Show loading state
-  songInfo.textContent = 'Searching...';
-  lyricsText.textContent = 'Loading lyrics...';
-  lyricsSection.style.display = 'block';
-  
-  updateScript(newURL);
+  songInfo.textContent = "Searching...";
+  lyricsText.textContent = "Loading lyrics...";
+  lyricsText.innerHTML = '<span class="loader"></span>'; // Show spinner
+  lyricsSection.style.display = "block";
+
+  const result = await fetchFromAPI(searchUrl);
+  lyricsText.innerHTML = ""; // Clear spinner
+  displayLyrics(result, songName, artistName);
 });
 
-function updateScript(url) {
-  let newScript = document.createElement("script");
-  newScript.src = url;
-  newScript.setAttribute("id", "head-script");
-
-  let oldScript = document.getElementById("head-script");
-  let head = document.getElementsByTagName("head")[0];
-
-  if (oldScript === null) {
-    head.appendChild(newScript);
-  } else {
-    head.replaceChild(newScript, oldScript);
-  }
-}
-
-function searchLyrics(object) {
-  if (object.message.header.status_code === 404) {
-    songInfo.textContent = 'Song not found';
-    lyricsText.textContent = 'Sorry, we could not find lyrics for this song. Please check the song and artist name and try again.';
-  } else {
-    const songName = songInput.value.trim();
-    const artistName = artistInput.value.trim();
+// Display the lyrics or an appropriate message
+function displayLyrics(data, songName, artistName) {
+  if (data && data.lyrics) {
     songInfo.textContent = `${songName} by ${artistName}`;
-    lyricsText.textContent = object.message.body.lyrics.lyrics_body;
-    
+    // The API returns a lot of newlines at the start, so we trim them.
+    lyricsText.textContent = data.lyrics.trim();
     // Clear form inputs
-    songInput.value = '';
-    artistInput.value = '';
+    songInput.value = "";
+    artistInput.value = "";
+  } else {
+    songInfo.textContent = "Lyrics not found";
+    lyricsText.textContent = `Sorry, we could not find lyrics for "${songName}" by ${artistName}. Please check the spelling and try again.`;
   }
 }
 
 // Close button functionality
-closeBtn.addEventListener('click', function() {
-  lyricsSection.style.display = 'none';
+closeBtn.addEventListener("click", function () {
+  lyricsSection.style.display = "none";
 });
 
-// Event listener for page load
-window.addEventListener("load", function() {
-  loadMostSearchedLyrics();
-  loadNewlyAddedLyrics();
+// A generic function to load and display chart data
+function displayChartNotAvailable(listElementSelector) {
+  const listElement = document.querySelector(listElementSelector);
+  listElement.innerHTML =
+    "<li>Chart feature not available with the current API.</li>";
+}
+
+// Load all charts when the page loads
+window.addEventListener("load", () => {
+  // The new API (lyrics.ovh) does not support charts.
+  displayChartNotAvailable(".most-searched-list");
+  displayChartNotAvailable(".newly-added-list");
 });
-
-function loadMostSearchedLyrics() {
-  const mostSearchedURL = "https://api.musixmatch.com/ws/1.1/chart.tracks.get?format=jsonp&callback=displayMostSearched&chart_name=top&page=1&page_size=5&apikey=f90cd35582c176dbcfd3ecebcc227390";
-  const mostSearchedScript = document.createElement("script");
-  mostSearchedScript.src = mostSearchedURL;
-  document.head.appendChild(mostSearchedScript);
-}
-
-function displayMostSearched(data) {
-  const mostSearchedList = document.querySelector(".most-searched-list");
-  const tracks = data.message.body.track_list;
-
-  if (!tracks || tracks.length === 0) {
-    mostSearchedList.innerHTML = "<li>No most searched lyrics found.</li>";
-    return;
-  }
-
-  tracks.forEach((track) => {
-    const trackName = track.track.track_name;
-    const artistName = track.track.artist_name;
-    const listItem = document.createElement("li");
-    listItem.textContent = `${trackName} by ${artistName}`;
-    mostSearchedList.appendChild(listItem);
-  });
-}
-
-function loadNewlyAddedLyrics() {
-  const newlyAddedURL = "https://api.musixmatch.com/ws/1.1/chart.tracks.get?format=jsonp&callback=displayNewlyAdded&chart_name=new&page=1&page_size=5&apikey=f90cd35582c176dbcfd3ecebcc227390";
-  const newlyAddedScript = document.createElement("script");
-  newlyAddedScript.src = newlyAddedURL;
-  document.head.appendChild(newlyAddedScript);
-}
-
-function displayNewlyAdded(data) {
-  const newlyAddedList = document.querySelector(".newly-added-list");
-  const tracks = data.message.body.track_list;
-
-  if (!tracks || tracks.length === 0) {
-    newlyAddedList.innerHTML = "<li>No newly added lyrics found.</li>";
-    return;
-  }
-
-  tracks.forEach((track) => {
-    const trackName = track.track.track_name;
-    const artistName = track.track.artist_name;
-    const listItem = document.createElement("li");
-    listItem.textContent = `${trackName} by ${artistName}`;
-    newlyAddedList.appendChild(listItem);
-  });
-}
-
-

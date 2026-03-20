@@ -5,29 +5,20 @@ turtle.title("Chess Board")
 canvas = turtle.Screen()
 artist = turtle.Turtle()
 canvas.setup(400, 600)
-
-# Set turtle object speed
 artist.speed(10)
 
 
 # Loop to draw each ROW on the board
 for i in range(8):
-  # Not ready to draw
   artist.up()
-  # Set position for every row as the starting point (y-axis) of each row moves upwards
   artist.goto(-100, 30 * i)
-  # Ready to draw
   artist.down()
-  
-  # Loop to draw 8 squares in each line (Single Row)
   for j in range(8):
-    # Conditions for alternative color
     if (i + j) % 2 == 0:
         col = 'black'
     else:
         col = 'white'
 
-    # Fill with given color and start filling with color
     artist.fillcolor(col)
     artist.begin_fill()
 

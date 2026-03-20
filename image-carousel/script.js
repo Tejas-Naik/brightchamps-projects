@@ -1,14 +1,14 @@
-const images = document.querySelectorAll('.carousel-1 .imagesBox img');
+const images = document.querySelectorAll(".carousel-1 .imagesBox img");
 let currentIndex = 0;
 
 function showNextImage() {
-  images[currentIndex].style.display = 'none';
+  images[currentIndex].style.display = "none";
   currentIndex++;
 
   if (currentIndex >= images.length) {
     currentIndex = 0;
   }
-  images[currentIndex].style.display = 'block';
+  images[currentIndex].style.display = "block";
 }
 
 setInterval(showNextImage, 3000);
@@ -17,18 +17,16 @@ setInterval(showNextImage, 3000);
 let currentSlide = 0;
 
 // Get references to HTML elements using their class and ID attributes.
-const slider = document.querySelector('.slider');  // Selects an element with the class "slider."
-const prevBtn = document.getElementById('prevBtn'); // Selects an element with the ID "prevBtn."
-const nextBtn = document.getElementById('nextBtn'); // Selects an element with the ID "nextBtn."
+const slider = document.querySelector(".slider");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
 
 // Initialize a variable to keep track of the slide index.
 let slideIndex = 0;
 
 // Define a function to show a specific slide based on its index.
 function showSlide(n) {
-  // Select all elements with the class "slider" that contain slides.
-  const slides = document.querySelectorAll('.slider .box');
-  
+  const slides = document.querySelectorAll(".slider .box");
   // If the given index (n) is greater than or equal to the total number of slides,
   // reset the index to the first slide (index 0).
   if (n >= slides.length) {
@@ -38,14 +36,13 @@ function showSlide(n) {
   else if (n < 0) {
     slideIndex = slides.length - 1;
   }
-
   // Hide all slides by setting their display style to 'none'.
   for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
+    slides[i].style.display = "none";
   }
 
   // Display the slide at the current index by setting its display style to 'block'.
-  slides[slideIndex].style.display = 'block';
+  slides[slideIndex].style.display = "block";
 }
 
 // Define a function to show the next slide.
@@ -68,10 +65,8 @@ function prevSlide() {
 showSlide(slideIndex);
 
 // Add click event listeners to the previous and next buttons to handle slide navigation.
-nextBtn.addEventListener('click', nextSlide);
-prevBtn.addEventListener('click', prevSlide);
-
-
+nextBtn.addEventListener("click", nextSlide);
+prevBtn.addEventListener("click", prevSlide);
 
 // Select all list items within elements with class "faq-text"
 let li = document.querySelectorAll(".faq-text li");

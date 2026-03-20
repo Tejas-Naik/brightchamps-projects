@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pomodoro — Tez Edition</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="color-scheme" content="light dark" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">
+          <svg viewBox="0 0 24 24" class="logo-icon" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" />
+            <path
+              d="M12 7v6l4 2"
+              stroke="#fff"
+              stroke-width="1.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              fill="none"
+            />
+          </svg>
+          <span>Pomodoro</span>
+        </a>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#contact">Contact</a>
+          <a href="#timer" class="btn primary small">Launch App</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Master Your Time.<br>Focus Deeply.</h1>
+        <p class="hero-subtitle">
+          The ultimate productivity companion for professionals. 
+          Boost your workflow with our scientifically proven timer.
+        </p>
+        <div class="hero-actions">
+          <a href="#timer" class="btn primary large">Start Focusing Now</a>
+          <a href="#features" class="btn ghost large">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <!-- Abstract visual or illustration can go here -->
+        <div class="glow-orb"></div>
+      </div>
+    </section>
+
+    <!-- Timer Application Section -->
+    <section id="timer" class="app-section">
+      <div class="section-header">
+        <h2>Your Focus Zone</h2>
+        <p>Distraction-free timer to keep you in the flow.</p>
+      </div>
+      
+      <main class="app" role="application" aria-label="Pomodoro timer">
+        <header class="app-header">
+          <div class="brand">
+            <!-- Logo removed from here as it is in nav now, keeping just title for context if needed or removing entirely -->
+            <div>
+              <h3>Current Session</h3>
+            </div>
+          </div>
+
+          <div class="header-actions">
+            <button id="settingsBtn" class="btn ghost" title="Settings (S)">
+              ⚙️ Settings
+            </button>
+            <button id="statsBtn" class="btn ghost" title="Stats (T)">
+              📊 Stats
+            </button>
+          </div>
+        </header>
+
+        <section class="timer-card" aria-live="polite">
+          <div class="ring-wrap" role="img" aria-label="Pomodoro progress">
+            <svg
+              class="ring"
+              viewBox="0 0 120 120"
+              width="260"
+              height="260"
+              aria-hidden="true"
+            >
+              <defs>
+                <linearGradient id="g" x1="0" x2="1">
+                  <stop offset="0%" stop-color="#ff6b6b" />
+                  <stop offset="100%" stop-color="#845ef7" />
+                </linearGradient>
+              </defs>
+              <circle class="ring-bg" cx="60" cy="60" r="52" />
+              <circle
+                class="ring-progress"
+                cx="60"
+                cy="60"
+                r="52"
+                stroke="url(#g)"
+              />
+            </svg>
+
+            <div class="timer-center">
+              <div class="mode-label" id="modeLabel">Focus</div>
+              <div id="timeDisplay" class="time">25:00</div>
+              <div class="controls">
+                <button id="startPause" class="btn primary" title="Start (Space)">
+                  ▶️ Start
+                </button>
+                <button id="skip" class="btn ghost" title="Skip (K)">
+                  ⏭ Skip
+                </button>
+                <button id="reset" class="btn ghost" title="Reset (R)">
+                  ⟲ Reset
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="side-panel">
+            <div class="quick-presets">
+              <label>Quick presets</label>
+              <div>
+                <button class="btn small preset" data-focus="25" data-break="5">
+                  25/5
+                </button>
+                <button class="btn small preset" data-focus="50" data-break="10">
+                  50/10
+                </button>
+                <button class="btn small preset" data-focus="90" data-break="20">
+                  90/20
+                </button>
+              </div>
+            </div>
+
+            <div class="mini-stats">
+              <label>Cycle</label>
+              <div class="stat-row">
+                <div>Pomodoros completed</div>
+                <div id="completedCount">0</div>
+              </div>
+              <div class="stat-row">
+                <div>Current streak</div>
+                <div id="streak">0</div>
+              </div>
+              <div class="stat-row">
+                <div>Mode</div>
+                <div id="currentMode">Focus</div>
+              </div>
+            </div>
+
+            <div class="footer-note muted small">
+              Tip: Press <kbd>Space</kbd> to start/pause, <kbd>K</kbd> to skip,
+              <kbd>R</kbd> to reset, <kbd>S</kbd> to open settings.
+            </div>
+          </div>
+        </section>
+      </main>
+    </section>
+
+    <!-- Future Services / Features Section -->
+    <section id="features" class="features-section">
+      <div class="section-header">
+        <h2>Future Services</h2>
+        <p>We are building the ultimate productivity ecosystem.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Advanced Analytics</h3>
+          <p>Deep dive into your productivity trends with detailed charts and weekly reports.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👥</div>
+          <h3>Team Sync</h3>
+          <p>Collaborate with your team, share timer states, and stay in sync remotely.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎵</div>
+          <h3>Focus Music</h3>
+          <p>Curated Lo-Fi and ambient soundscapes to help you get into the zone instantly.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📅</div>
+          <h3>Calendar Integration</h3>
+          <p>Sync your focus blocks directly with Google Calendar and Outlook.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="contact-container">
+        <div class="contact-text">
+          <h2>Get in Touch</h2>
+          <p>Have questions or suggestions? We'd love to hear from you.</p>
+          <div class="contact-info">
+            <p>📧 hello@pomodoro.app</p>
+            <p>🐦 @pomodoroapp</p>
+          </div>
+        </div>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="hello@example.com" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="How can we help?"></textarea>
+          </div>
+          <button type="submit" class="btn primary full-width">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Pomodoro App. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Settings Modal -->
+    <div
+      id="settingsModal"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-labelledby="settingsTitle"
+    >
+      <div class="modal-panel">
+        <header class="modal-header">
+          <h2 id="settingsTitle">Settings</h2>
+          <button id="closeSettings" class="btn ghost" aria-label="Close">
+            ✕
+          </button>
+        </header>
+
+        <div class="modal-body">
+          <div class="form-row">
+            <label for="focusMinutes">Focus minutes</label>
+            <input id="focusMinutes" type="number" min="1" max="180" />
+          </div>
+          <div class="form-row">
+            <label for="shortBreakMinutes">Short break minutes</label>
+            <input id="shortBreakMinutes" type="number" min="1" max="60" />
+          </div>
+          <div class="form-row">
+            <label for="longBreakMinutes">Long break minutes</label>
+            <input id="longBreakMinutes" type="number" min="1" max="120" />
+          </div>
+          <div class="form-row">
+            <label for="roundsBeforeLong">Rounds before long break</label>
+            <input id="roundsBeforeLong" type="number" min="1" max="10" />
+          </div>
+          <div class="form-row">
+            <label for="autoStart">Auto-start next session</label>
+            <input id="autoStart" type="checkbox" />
+          </div>
+
+          <div class="form-row">
+            <label for="soundToggle">Sound alerts</label>
+            <input id="soundToggle" type="checkbox" />
+          </div>
+
+          <div class="form-row">
+            <label for="notifyToggle">Desktop notifications</label>
+            <input id="notifyToggle" type="checkbox" />
+          </div>
+        </div>
+
+        <footer class="modal-footer">
+          <button id="saveSettings" class="btn primary">Save</button>
+          <button id="restoreDefaults" class="btn ghost">
+            Restore defaults
+          </button>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Stats Modal -->
+    <div
+      id="statsModal"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-labelledby="statsTitle"
+    >
+      <div class="modal-panel">
+        <header class="modal-header">
+          <h2 id="statsTitle">Stats</h2>
+          <button id="closeStats" class="btn ghost" aria-label="Close">
+            ✕
+          </button>
+        </header>
+        <div class="modal-body">
+          <div class="stat-row">
+            <div>Today completed</div>
+            <div id="todayCompleted">0</div>
+          </div>
+          <div class="stat-row">
+            <div>Total completed</div>
+            <div id="totalCompleted">0</div>
+          </div>
+          <div class="stat-row">
+            <div>Longest streak</div>
+            <div id="longestStreak">0</div>
+          </div>
+        </div>
+        <footer class="modal-footer">
+          <button id="clearStats" class="btn ghost">Clear stats</button>
+        </footer>
+      </div>
+    </div>
+
+    <audio id="ding" preload="auto">
+      <source
+        src="data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAESsAACJWAAACABAAZGF0YQAAAAA="
+        type="audio/wav"
+      />
+    </audio>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

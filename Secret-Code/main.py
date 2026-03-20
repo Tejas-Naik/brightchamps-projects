@@ -137,10 +137,3 @@ for x in range(num+1):
 print("sum of even numbers is ",total_even)
 print("sum of odd numbers is ",total_odd)
 
-
-
-
-
-
-
-

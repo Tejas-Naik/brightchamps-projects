@@ -43,7 +43,11 @@ root.configure(bg="#E6E6FA")  # Lavender background color
 # Add a custom style to the ttk elements
 style = ttk.Style()
 style.theme_use("clam")  # You can choose from different themes (classic, clam, default, etc.)
-style.configure("TLabel", font=("Helvetica", 12), background="#E6E6FA")  # Lavender background for labels
+style.configure(
+    "TLabel", 
+    font=("Helvetica", 12), 
+    background="#E6E6FA"
+    )  # Lavender background for labels
 style.configure("TEntry", font=("Helvetica", 12))
 style.configure("TCombobox", font=("Helvetica", 12))
 
@@ -55,16 +59,42 @@ email_label = ttk.Label(root, text="Email:")
 email_label.grid(row=1, column=0, padx=10, pady=5, sticky=tk.W)
 
 password_label = ttk.Label(root, text="Password:")
-password_label.grid(row=2, column=0, padx=10, pady=5, sticky=tk.W)
+password_label.grid(
+    row=2, 
+    column=0, 
+    padx=10, 
+    pady=5, 
+    sticky=tk.W
+)
 
-confirm_password_label = ttk.Label(root, text="Confirm Password:")
-confirm_password_label.grid(row=3, column=0, padx=10, pady=5, sticky=tk.W)
+confirm_password_label = ttk.Label(
+    root, 
+    text="Confirm Password:"
+    )
+confirm_password_label.grid(
+    row=3, 
+    column=0, 
+    padx=10, 
+    pady=5, 
+    sticky=tk.W)
 
 gender_label = ttk.Label(root, text="Gender:")
-gender_label.grid(row=4, column=0, padx=10, pady=5, sticky=tk.W)
+gender_label.grid(
+    row=4, 
+    column=0, 
+    padx=10, 
+    pady=5, 
+    sticky=tk.W
+    )
 
 country_label = ttk.Label(root, text="Country:")
-country_label.grid(row=5, column=0, padx=10, pady=5, sticky=tk.W)
+country_label.grid(
+    row=5, 
+    column=0, 
+    padx=10, 
+    pady=5, 
+    sticky=tk.W
+)
 
 bio_label = ttk.Label(root, text="Bio:")
 bio_label.grid(row=6, column=0, padx=10, pady=5, sticky=tk.W)
@@ -85,25 +115,78 @@ confirm_password_entry.grid(row=3, column=1, padx=10, pady=5)
 # Create a variable to store the selected gender
 gender_var = tk.StringVar()
 gender_var.set("Male")  # Default value
-male_radio = ttk.Radiobutton(root, text="Male", variable=gender_var, value="Male")
-male_radio.grid(row=4, column=1, padx=10, pady=5, sticky=tk.W)
+male_radio = ttk.Radiobutton(
+    root, 
+    text="Male", 
+    variable=gender_var, 
+    value="Male"
+)
+male_radio.grid(
+    row=4, 
+    column=1, 
+    padx=10, 
+    pady=5, 
+    sticky=tk.W
+)
 
-female_radio = ttk.Radiobutton(root, text="Female", variable=gender_var, value="Female")
-female_radio.grid(row=4, column=1, padx=70, pady=5, sticky=tk.W)
+female_radio = ttk.Radiobutton(
+    root, 
+    text="Female", 
+    variable=gender_var, 
+    value="Female"
+)
+female_radio.grid(
+    row=4, 
+    column=1, 
+    padx=10, 
+    pady=5, 
+    sticky=tk.W
+)
 
 # Create a variable to store the selected country
 country_var = tk.StringVar()
-country_var.set("USA")  # Default value
-country_dropdown = ttk.Combobox(root, textvariable=country_var, values=["USA", "Canada", "UK", "Australia"])
-country_dropdown.grid(row=5, column=1, padx=10, pady=5, sticky=tk.W)
+country_var.set("India")  # Default value
+country_dropdown = ttk.Combobox(
+    root, 
+    textvariable=country_var, 
+    values=[
+        "USA", 
+        "Canada", 
+        "UK", 
+        "Australia", 
+        "India"
+        ]
+)
+country_dropdown.grid(
+    row=5, 
+    column=1, 
+    padx=10, 
+    pady=5, 
+    sticky=tk.W
+)
 
 # Create a text box for the bio
 bio_text = tk.Text(root, width=30, height=5)
-bio_text.grid(row=6, column=1, padx=10, pady=5)
+bio_text.grid(
+    row=6, 
+    column=1, 
+    padx=10, 
+    pady=5
+)
 
 # Create and style the submit button
-submit_button = ttk.Button(root, text="Submit", command=submit_form, cursor="hand2")
-submit_button.grid(row=7, column=0, columnspan=2, padx=10, pady=10, sticky=tk.W+tk.E)  # Expand button horizontally
+submit_button = ttk.Button(
+    root, text="Submit", 
+    command=submit_form, 
+    cursor="hand2")
+submit_button.grid(
+    row=7, 
+    column=0, 
+    columnspan=2, 
+    padx=10, 
+    pady=10, 
+    sticky=tk.W+tk.E
+)  # Expand button horizontally
 
 # Set the background and foreground color for the button
 submit_button_style = ttk.Style()

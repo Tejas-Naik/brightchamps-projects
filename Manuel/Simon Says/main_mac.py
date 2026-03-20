@@ -2,6 +2,14 @@
 import pygame
 import random
 import sys
+import os
+
+# Get the absolute path to the directory where the script is located
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Initialize the Pygame mixer before the main pygame init.
+# This is a common fix for sound issues on macOS.
+pygame.mixer.pre_init(44100, -16, 2, 512)
 
 # Initialize the Pygame library
 pygame.init()
@@ -14,25 +22,25 @@ pygame.display.set_caption('Simon Says')
 # Load images and sounds for superheroes
 SUPERHEROES = {
   1: {
-    'image': pygame.transform.scale(pygame.image.load('superman.png'),
+    'image': pygame.transform.scale(pygame.image.load(os.path.join(script_dir, 'superman.png')),
                                     (50, 100)),
-    'sound': pygame.mixer.Sound('superman.wav')
+    'sound': pygame.mixer.Sound(os.path.join(script_dir, 'superman.wav'))
   },
   2: {
-    'image': pygame.transform.scale(pygame.image.load('ironman.png'),
+    'image': pygame.transform.scale(pygame.image.load(os.path.join(script_dir, 'ironman.png')),
                                     (50, 100)),
-    'sound': pygame.mixer.Sound('ironman.wav')
+    'sound': pygame.mixer.Sound(os.path.join(script_dir, 'ironman.wav'))
   },
   3: {
-    'image': pygame.transform.scale(pygame.image.load('batman.png'),
+    'image': pygame.transform.scale(pygame.image.load(os.path.join(script_dir, 'batman.png')),
                                     (50, 100)),
-    'sound': pygame.mixer.Sound('batman.wav')
+    'sound': pygame.mixer.Sound(os.path.join(script_dir, 'batman.wav'))
   },
   4: {
     'image':
-    pygame.transform.scale(pygame.image.load('spiderman.png'), (50, 100)),
+    pygame.transform.scale(pygame.image.load(os.path.join(script_dir, 'spiderman.png')), (50, 100)),
     'sound':
-    pygame.mixer.Sound('spiderman.wav')
+    pygame.mixer.Sound(os.path.join(script_dir, 'spiderman.wav'))
   },
 }
 
@@ -60,7 +68,8 @@ def display_superhero_images():
 # Function to play the sequence of sounds and images
 def play_sequence(length):
   global sequence
-  sequence = [random.randint(1, 4) for _ in range(length)]  # Generate a sequence of random superheroes
+  sequence = [random.randint(1, 4) for _ in range(length)
+              ]  # Generate a sequence of random superheroes
 
   # Display the message to listen and remember the sequence
   display_message("Listen the sequence!")
@@ -84,25 +93,34 @@ def play_sound_and_get_response():
   # Play the sequence
   play_sequence(sequence_length)
 
+  player_sequence = []
   # Wait for the player's response
-  for superhero_num in sequence:
+  while len(player_sequence) < len(sequence):
     waiting_for_input = True
     while waiting_for_input:
       for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+          pygame.quit()
+          sys.exit()
         if event.type == pygame.MOUSEBUTTONDOWN:
           mouse_x, mouse_y = pygame.mouse.get_pos()
-          image_rect = SUPERHEROES[superhero_num]['image'].get_rect(
-            topleft=((superhero_num - 1) * 100 + 25, 150))
-          if image_rect.collidepoint(mouse_x, mouse_y):
-            waiting_for_input = False
-          else:
-            return False  # Wrong sequence, game over
+          clicked_superhero = None
+          # Check which superhero was clicked
+          for i in range(1, 5):
+            image_rect = SUPERHEROES[i]['image'].get_rect(topleft=((i - 1) * 100 + 25, 150))
+            if image_rect.collidepoint(mouse_x, mouse_y):
+              clicked_superhero = i
+              SUPERHEROES[i]['sound'].play() # Play sound on click for feedback
+              break
+          
+          if clicked_superhero and clicked_superhero == sequence[len(player_sequence)]:
+            player_sequence.append(clicked_superhero)
+            waiting_for_input = False # Move to next input
+          elif clicked_superhero: # Clicked the wrong one
+            return False # Game over
 
   return True  # Correct sequence, continue the game
 
-
-# Initialize the Pygame mixer for sound playback
-pygame.mixer.init()
 
 # Main game loop
 gameover = False
